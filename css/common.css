@@ -366,7 +366,7 @@ body {
 .ft-info-dl-mo {
   display: block;
   line-height: 2;
-  font-size: 14px;
+  font-size: 13px;
 }
 .ft-info-dl-mo dt:after {
   content: ':';
