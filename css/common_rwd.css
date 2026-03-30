@@ -12,16 +12,7 @@
 }
 
 /* 2. tb 768px부터~ */
-@media all and (min-width: 768px) {
-  .mo-gnb-sitemap {
-    width: 450px;
-  }
-  .mo-gnb-logo {
-    width: 360px;
-    height: 38px;
-    background: none;
-  }
-}
+@media all and (min-width: 768px) {}
 
 /* 4. pc 1280px부터~ */
 @media all and (min-width: 1280px) {
@@ -29,12 +20,15 @@
     display: block;
   }
   .yh-gnb {
-    position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1040px;
   }
   .depth1 {}
   .depth1 > a {
     display: flex;
+    justify-content: center;
     align-items: center;
     width: 155px;
     height: 100px;
@@ -44,34 +38,41 @@
   .depth1:hover > a {
     color: var(--main-color);
   }
-  .depth2-wrap {
-    display: none;
+  #yh-gnb .yh-gnb .depth1 .depth2-wrap {
     position: absolute;
+    display: none;
     left: 0;
     top: 100px;
     width: 100%;
-    background-color: #fff;
-    border-bottom: 1px solid #f1f1f1;
-  }
-  .depth2 {
-    width: 155px;
     height: 240px;
-    padding: 20px 10px;
+    background-color: #fff;
+    text-align: center;
+    overflow: hidden;
+    padding: 0;
   }
-  .depth2 li {
-    padding: 10px;
-  }
-  .depth2 a {
+
+  .depth1:nth-child(1) .depth2 {transform: translateX(-15.5%);}
+  .depth1:nth-child(2) .depth2 {transform: translateX(-7.2%);}
+  .depth1:nth-child(3) .depth2 {}
+  .depth1:nth-child(4) .depth2 {transform: translateX(9%);}
+  .depth1:nth-child(5) .depth2 {transform: translateX(17%);}
+  .depth1:nth-child(3) > a {margin: 0 20px;}
+  .depth2 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    height: 100%;
+  }
+  .depth2 a {
     font-size: 18px;
     color: #000;
   }
-  .depth2 li:hover a{
+  .depth2 a:hover {
     color: var(--main-color);
   }
+
+
 
   .lang-list {
     left: 40%;

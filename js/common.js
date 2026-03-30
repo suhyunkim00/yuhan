@@ -18,20 +18,19 @@ $(function () {
     rwd();
   });
 
+  // PC GNB 구현 : depth1에 마우스가 진입하면 depth2가 슬라이드다운
+  $(mainMenu).mouseenter(function() {
+    $(this).find(subMenu).stop().slideDown(300);
+  });
+  $(mainMenu).mouseleave(function() {
+    $(this).find(subMenu).stop().slideUp(300);
+  });
+  
   // 언어선택
   $(".lang-btn").click(function(){
     $(this).next().slideToggle(300);
   });
-
-   // PC GNB 구현 : depth1에 마우스가 진입하면 depth2가 슬라이드다운
-  $(mainMenu).mouseenter(function(){
-    $(this).children(subMenu).stop().slideDown(300);
-  });
-  // PC GNB 구현 : depth1에 마우스가 떠나면 depth2가 슬라이드업
-  $(mainMenu).mouseleave(function(){
-    $(this).children(subMenu).stop().slideUp(300);
-  }); 
-
+  
   // 사이트맵
   $(stiemapBtn).click(function(){
     $(body).addClass("fixed");
@@ -44,7 +43,7 @@ $(function () {
 
    // 모바일 메뉴 펼치기/접기
   $(smMainMenu).click(function(e) {
-    if($(body).hasClass("mo") || $(body).hasClass("tb")){ //모바일 해상도에서면 실행
+    if($(body).hasClass("mo")){ //모바일 해상도에서면 실행
       e.preventDefault(); //<a>의 링크 기능 실행 막기
       $(this).parent().siblings().find(smSubMenu).stop().slideUp(300);
       $(this).next().stop().slideToggle(300);

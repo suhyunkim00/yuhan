@@ -508,7 +508,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-left: 16px;
-  border-bottom: #f1f1f1 1px solid;
 }
 .mo-gnb-logo {
   width: 55vw;
@@ -535,7 +534,9 @@ body {
   overflow: auto;
 }
 .yh-mo-gnb {}
-.mo-depth1 {}
+.mo-depth1 {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
 .mo-depth1 > a {
   display: flex;
   justify-content: space-between;
