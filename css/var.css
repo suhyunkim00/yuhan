@@ -1,0 +1,9 @@
+@charset 'utf-8';
+:root {
+  --main-color: #008944;
+  --gray-color: #f4f4f4;
+  --main-font: 'Pretendard Variable', sans-serif;
+  --main-en-font: 'Kantumruy Pro', sans-serif;
+  --txt-color: #333333;
+  --google-icon: 'Material Symbols Outlined';
+}
