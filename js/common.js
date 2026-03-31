@@ -1,8 +1,6 @@
 $(function () {
   //변수
   const body = "body";
-  const hd = "#yh-hd";
-  const ft = "#yh-ft";
   const mainMenu = ".depth1";
   const subMenu = ".depth2-wrap";
   const stiemapBtn = ".sitemap-btn";
@@ -11,6 +9,7 @@ $(function () {
   const smMainMenu = ".mo-depth1 > a";
   const smSubMenu = ".mo-depth2";
   const blankAnchor = "a[href='#']";
+  let scTop = $(window).scrollTop();
 
   // 반응형 구현
   rwd();
@@ -30,6 +29,24 @@ $(function () {
   $(".lang-btn").click(function(){
     $(this).next().slideToggle(300);
   });
+  // 모바일푸터 패밀리사이트 버튼
+  $(".ft-site-btn-mo").click(function(){
+    $(this).next().slideToggle(300);
+    $(this).parent().toggleClass("active"); //화살표 회전
+  });
+  // 모바일푸터 gnb 버튼
+  $(".ft-depth1-mo > a").click(function(e) {
+  e.preventDefault(); // <a> 태그의 기본 링크 이동 막기
+  $(this).parent().siblings().find(".ft-depth2-mo").stop().slideUp(300);
+  $(this).parent().siblings().removeClass("active");
+  $(this).next().stop().slideToggle(300);
+  $(this).parent().toggleClass("active");
+  });
+  // pc푸터 패밀리사이트 버튼
+  $(".ft-site-btn").click(function(){
+    $(this).next().slideToggle(300);
+    $(this).parent().toggleClass("active"); //화살표 회전
+  });
   
   // 사이트맵
   $(stiemapBtn).click(function(){
@@ -44,10 +61,10 @@ $(function () {
    // 모바일 메뉴 펼치기/접기
   $(smMainMenu).click(function(e) {
     if($(body).hasClass("mo")){ //모바일 해상도에서면 실행
-      e.preventDefault(); //<a>의 링크 기능 실행 막기
+      e.preventDefault();
       $(this).parent().siblings().find(smSubMenu).stop().slideUp(300);
       $(this).next().stop().slideToggle(300);
-      $(this).parent().toggleClass("active"); // 화살표 회전을 위해 필요
+      $(this).parent().toggleClass("active");
     }
   });
 
@@ -70,5 +87,40 @@ $(function () {
     }
     $(smSubMenu).attr("style","");
   }
+
+//   $(function() {
+//   // 헤더 전체에 마우스 진입 시
+//   $('.yh-hd').mouseenter(function() {
+//     $(this).addClass('active');
+//     $('.yh-logo img').attr('src', '../images/y_logo_bk.svg'); 
+//   });
+//   // 헤더에서 마우스가 나갈 때
+//   $('.yh-hd').mouseleave(function() {
+//     $(this).removeClass('active');
+//     $('.yh-logo img').attr('src', 'images/y_logo_wh.svg');
+//   });
+// });
+
+  // 헤더 제어
+  const hd = $(".yh-hd");
+  const ft = $("#yh-ft-pc");
+  let hdHeight = hd.height();
+  let ftOffset = ft.offset().top - 200;
+
+  //console.log(scTop);
+  $(window).scroll(function(){
+    scTop = $(window).scrollTop();
+    if(scTop > hdHeight) { //헤더만큼 스크롤 됐을 때
+      hd.addClass("fixed");
+    } else {
+      hd.removeClass("fixed");
+    }
+    // 푸터가 화면에 표시 될 때쯤 헤더 숨기기
+    if(scTop > ftOffset){
+      hd.fadeOut(300);
+    } else {
+      hd.fadeIn(300);
+    }
+  });
 
 });
