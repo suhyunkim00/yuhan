@@ -1,0 +1,13 @@
+@charset 'utf-8';
+/* 웹폰트 연결 */
+@import url('webfonts.css');
+@import url('var.css');
+.yh-lnb-gov {
+  text-shadow: none;
+}
+.yh-lnb-list li:last-child {
+    background-color: #fff;
+}
+.yh-lnb-list li:last-child a {
+  color: var(--txt-color);
+}
