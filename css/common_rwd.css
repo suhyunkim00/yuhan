@@ -11,24 +11,68 @@
   #yh-ft-pc {
     display: none;
   }
-  #yh-ft-mo {
-    display: block;
-  }
 }
 
 /* 2. tb 768px부터~ */
-@media all and (min-width: 768px) {}
+@media all and (min-width: 768px) {
+  .yh-hd .wh-bg {
+    height: 70px;
+  }
+  #yh-ft-pc {
+    display: none;
+  }
+  .ft-logo-mo {
+    width: 300px;
+    height: 80px;
+    background: url('../images/y_logo_wh.svg') 0 0 / 260px no-repeat;
+  }
+  .ft-info-mo {
+    padding: 0 0 30px 0;
+  }
+  .ft-name {
+    line-height: 4;
+  }
+  .ft-box {
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .ft-box-left {
+    width: 300px;
+  }
+  .ft-gnb-mo ol {
+    width: 100%;
+    gap: 30px;
+    padding-top: 70px;
+    padding-right: 16px;
+  }
+  .ft-depth1-mo {
+    width: 33%;
+    max-width: 120px;
+  }
+  .ft-depth1-mo > a {
+    width: 120px;
+  }
+  .ft-info-dl-mo dd:after {
+    display: none;
+  }
+  
+}
 
 /* 4. pc 1280px부터~ */
 @media all and (min-width: 1280px) {
+  .yh-hd .wh-bg {
+    height: 100px;
+  }
   #yh-gnb {
     display: block;
   }
   .yh-gnb {
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 1040px;
+    letter-spacing: -1px;
   }
   .depth1 {
     position: relative;
@@ -48,21 +92,16 @@
   }
   .depth2-wrap {
     position: absolute;
-    display: none;
     left: 0;
     top: 100px;
     width: 100%;
-    background-color: #fff;
-    text-align: left;
-    overflow: hidden;
+    text-align: center;
     padding: 0;
+    overflow: hidden;
   }
-  .depth2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    background-color: #fff;
+  .depth2 {}
+  .depth2 li {
+    margin: 10px;
   }
   .depth2 a {
     font-size: 18px;
@@ -71,20 +110,12 @@
   .depth2 a:hover {
     color: var(--main-color);
   }
-  
-  
-
-
-
-
   .lang-list {
     left: 40%;
   }
   .sitemap-btn {
     display: none;
   }
-
-
   #yh-ft-pc {
     display: block;
   }

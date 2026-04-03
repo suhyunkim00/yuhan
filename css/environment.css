@@ -1,0 +1,14 @@
+@charset 'utf-8';
+/* 웹폰트 연결 */
+@import url('webfonts.css');
+@import url('var.css');
+.yh-lnb-env {
+  text-shadow: none;
+}
+.yh-lnb-list li:first-child {
+  background-color: #fff;
+}
+.yh-lnb-list li:first-child a {
+  color: var(--txt-color);
+  text-shadow: inherit;
+}

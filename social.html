@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<html lang="ko">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>유한양행</title>
-  <link rel="stylesheet" href="./css/common.css">
-  <link rel="stylesheet" href="./css/common_rwd.css">
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/main_rwd.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <script src="./js/jquery-1.12.4.min.js"></script>
-  <script src='./js/jquery-ui.min.js'></script>
-  <script src="./js/lenis.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="./js/common.js"></script>
-  <script src="./js/main.js"></script>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지속가능경영</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/common_rwd.css">
+    <link rel="stylesheet" href="./css/sub.css">
+    <link rel="stylesheet" href="./css/social.css">
+    <link rel="stylesheet" href="./css/social_rwd.css">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src='./js/jquery-ui.min.js'></script>
+    <script src="./js/lenis.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/sub.js"></script>
 
+</head>
 <body>
   <!-- 헤더 -->
   <header class="yh-hd">
@@ -58,7 +56,7 @@
             <div class="depth2-wrap">
               <ul class="depth2">
                 <li><a href="#">환경경영</a></li>
-                <li><a href="/social.html">사회공헌</a></li>
+                <li><a href="#">사회공헌</a></li>
                 <li><a href="#">윤리경영</a></li>
               </ul>
             </div>
@@ -105,217 +103,94 @@
     </div>
   </header>
 
+  <!-- 3. 서브헤더 & 비주얼 -->
+  <header class="sub-hd">
+    <div class="sub-hero-contents wh">
+      <div class="sub-hero-title">YUHAN ESG</div>
+      <div class="sub-hero-txt-en">GREAT YUHAN, GLOBAL YUHAN</div>
+      <div class="sub-hero-txt-ko">인류의 행복한 내일을 위해</div>
+    </div>
+    <nav id="yh-lnb">
+      <h3 class="blind">LNB 서브메뉴</h3>
+      <ol class="yh-lnb-list wh">
+        <li><a href="./environment.html" class="yh-lnb-btn yh-lnb-env">환경경영</a></li>
+        <li><a href="#" class="yh-lnb-btn yh-lnb-soc">사회공헌</a></li>
+        <li><a href="./governance.html" class="yh-lnb-btn yh-lnb-gov">윤리경영</a></li>
+      </ol>
+    </nav>
+  </header>
+
   <!-- 메인 -->
-  <main class="yh-main">
-    <section class="main-sec main-sec-hero wrap">
-      <h2 class="blind">히어로 영역</h2>
-      <div class="main-hero-container">
-        <video src="./images/y_heroVideo.mp4" class="main-hero-video" autoplay muted loop></video>
-        <div class="main-hero-txt">
-          <span>Excellence</span>
-          <span>Compliance</span>
-          <span>Contribution</span>
-        </div>
-        <div class="main-hero-txt2">
-          <span>True Hearts for Life</span>
-          <span>YUHAN</span>
-        </div>
+  <main id="yh-esg">
+    <section class="main-sec main-sec-csrStr wrap-sub">
+      <h2 class="blind">사회공헌체계</h2>
+      <div class="main-container csrStr-container">
+        <div class="main-title">사회공헌체계</div>
+        <p class="main-txt main-txt-csrStr">유한양행은 사회환원과 나눔의 창업정신을 계승하고 기업의 가치를 사회와 함께 나누고자 노력하고 있습니다.제약업의 본질인 건강 및 업(業)의 특성을 살려 ESG와 연계한 다양한 사회공헌사업을 실시하고 있습니다. 또한 지역사회와 연계하여 소외계층을 지원하고 다양한 NGO와 소통하며 지역사회 발전을 위해 노력하고 있습니다. 아울러, 임직원 자원봉사 활성화 등 실천적 나눔문화 구축에도 앞장서고 있습니다.</p>
+        <img src="./images/y_social/y_social1_mo.png" class="main-img-csrStr"></div>
       </div>
     </section>
-    <section class="main-sec-story">
-      <h2 class="blind">스토리</h2>
-      <div class="main-story-container wrap">
-        <div class="main-story-txt-wrap">
-          <div class="main-story-name">
-            <span>YUHAN</span><br>
-            <span><strong>STORY</strong></span>
-          </div>
-          <div class="main-story-txt-mo">
-            <span>유한양행은 정직한 마음으로<br>국민 건강의 역사를 써 내려갑니다. </span>
-          </div>
-          <div class="main-story-txt-pc">
-            <span>"정직한 마음으로 국민 건강의 역사를 써 내려온 유한양행은 이제 한국을 넘어<br><span>글로벌 제약 시장</span>의 혁신을 선도하고자 합니다.
-            <br>인류의 내일을 더 밝게 만드는 신약 개발과 <span>생명 존중의 가치</span>를<br>
-            실현하며, 전 세계인의 건강한 미래를 위한 새로운 기준을 만들어 가겠습니다."</span>
-          </div>
+    <section class="main-sec main-sec-csrSys wrap-sub">
+      <h2 class="blind">사회공헌시스템</h2>
+      <div class="main-container csrSys-container">
+        <div class="main-title">사회공헌시스템</div>
+        <div class="main-txt main-txt-csrSys">
+          <span>“기업에서 얻은 이익은 그 기업을 키워준 사회에 환원해야 한다“</span><br><br>
+          <p>유일한 박사가 1971년 영면하시며 전 재산을 유한재단과 유한학원에 기부하면서 유한양행만의 독특한 사회환원 시스템은 만들어졌습니다. 이를 통해 자연스럽게 유한양행의 최대 주주는 공익재단이 되었으며, 회사가 발전할수록 두 공익재단은 매년 안정적인 배당 수익을 통해 사회에 기여할 수 있는 시스템이 마련되었습니다. 회사가 창출하는 이익의 일정 부분이 구조적으로 우리 사회에 환원되도록 시스템화한 것입니다. 이런 사회환원 시스템을 통해 유한재단과 유한학원은 다양한 사회복지사업과 교육사업을 전개하며 사회에 기여하고 있습니다.</p>
         </div>
-      <img src="/images/visual_04.jpg" alt="스토리 이미지">
+        <img src="./images/y_social/y_social2_mo.jpg" class="main-img-csrSys">
       </div>
     </section>
-    <section class="main-sec main-sec-company">
-      <h2 class="blind">유한연혁</h2>
-      <div class="main-company-container wrap">
-        <div class="main-company-wrap-mo">
-          <div class="company-name-mo"><span>YUHAN</span></div>
-          <div class="company-txt-mo"><span>유한양행은 창업이래 지금까지<br> 신뢰와 정직의 기업문화를 가지고<br> 우수한 의약품 생산과 국민보건 향상에<br> 매진해왔습니다.<br> 우리는 국내 1등을 넘어 글로벌 제약사로의 길,<br> 인류 건강을 위한 그 길을 위해<br> 큰 꿈을 갖고 걸어가려 합니다.</span></div>
-          <div class="company-t-group">
-            <div class="company-vision-mo">
-              <div class="vision-name-mo cp-title-mo"><span>MISSION & VISION</span></div>
-              <div class="vision-txt-mo cp-txt-mo"><span>유한양행은 환자 중심의 글로벌 선도<br>제약연구소로 도약하고자 노력합니다.</span></div>
-            </div>
-            <div class="company-ceo-mo">
-              <div class="ceo-name-mo cp-title-mo"><span>유일한 박사</span></div>
-              <div class="ceo-txt-mo cp-txt-mo"><span>국민의 건강이 곧 나라의 힘이라는<br>믿음으로 걷습니다.</span></div>
-            </div>
-            <div class="company-news-mo">
-              <div class="news-name-mo cp-title-mo"><span>NEWS ROOM</span></div>
-              <div class="news-txt-mo cp-txt-mo"><span>유한양행의 혁신적인 R&D 성과와<br>생명 존중을 향한 새로운 소식을 만나보세요.</span></div>
-            </div>
-          </div>
-        </div>
-        <div class="main-company-wrap-pc">
-          <div class="company-name-pc"><span>YUHAN</span></div>
-          <div class="company-txt-pc"><span>유한양행은 창업이래 지금까지 신뢰와 정직의 기업문화를 가지고<br> 우수한 의약품 생산과 국민보건 향상에 매진해왔습니다.<br> 우리는 국내 1등을 넘어 글로벌 제약사로의 길, 인류 건강을 위한 그 길을 위해 큰 꿈을 갖고 걸어가려 합니다.</span></div>
-          <div class="company-box-pc">
-            <div class="company-vision-pc">
-              <div class="cp-vision-ts">
-                <div class="cp-txt-group">
-                  <div class="vision-name-pc cp-title-pc"><span>MISSION & VISION</span></div>
-                  <div class="vision-subname cp-sub-pc"><span>인류의 건강을 위한 끊임없는 도전과 혁신</span></div>
-                </div>
-              </div>
-              <div class="vision-txt-pc cp-txt-pc"><span>유한양행은 '가장 좋은 상품의 생산, 성실한 납세,<br>기업 이윤의 사회 환원'이라는 창업 정신을 계승합니다.<br>우리는 환자 중심의 글로벌 선도 제약 연구소로  도약하기 위해 <br>R&D 역량을 집중하며, 인류의 내일을 더 건강하게 만드는 <br>혁신적인 신약 개발에 앞장서고 있습니다.</span></div>
-            </div>
-            <div class="company-ceo-pc">
-              <div class="cp-ceo-ts">
-                <div class="cp-txt-group">
-                  <div class="ceo-name-pc cp-title-pc"><span>유일한 박사</span></div>
-                  <div class="ceo-subname cp-sub-pc"><span>국가와 동포를 사랑한 선구자, 그 숭고한 발자취</span></div>
-                </div>  
-              </div>
-              <div class="ceo-txt-pc cp-txt-pc"><span>"기업에서 얻은 이익은 그 기업을 키워준 사회에 환원해야 한다"는<br> 유일한 박사의 신념은 유한양행의 뿌리입니다.<br>국민의 건강이 곧 나라의 힘이라는 믿음으로 걸어온 정직한 길을 이어받아,<br>우리는 오늘도 사회적 책임을 다하는 투명한 경영을 실천하고 있습니다.</span></div>
-            </div>
-            <div class="company-news-pc">
-              <div class="cp-news-ts">
-                <div class="cp-txt-group">
-                  <div class="news-name-pc cp-title-pc"><span>NEWS ROOM</span></div>
-                  <div class="news-sub-name cp-sub-pc"><span>유한양행이 전하는 혁신과 상생의 새로운 소식 </span></div>
-                </div>
-              </div>
-              <div class="news-txt-pc cp-txt-pc"><span>세계 시장을 향한 유한양행의 최신 R&D 성과부터 <br>지역사회와 함께하는 따뜻한 나눔 활동까지, <br>생명 존중을 향한 우리의 생생한 발걸음을 만나보세요. <br>끊임없이 변화하고 성장하는 유한양행의 전문적인 뉴스들이 <br>실시간으로 업데이트됩니다.</span></div>
-            </div>
+    <section class="main-sec main-sec-awards wrap-sub">
+      <h2 class="blind">시상사업</h2>
+      <div class="main-container awards-container">
+        <div class="main-title">시상사업</div>
+        <p class="main-txt main-txt-awards">유일한상은 평생을 진취적인 기업가, 선구적인 교육가, 애국애족의 독립운동가 그리고 헌신적인 사회사업가로 모범적 삶을 영위하시고, 전 재산을 사회에 환원하신 유일한 박사의 숭고한 정신을 기리기 위해 1995년에 제정되었습니다.<br>이후 모범적인 삶을 살아가고 국가와 사회발전에 지대한 공이 있는 분을 찾아 격년으로 시상하며, 이 사회의 귀감이 되도록 하고 있습니다.</p>
+        <div class="main-card-awards">
+          <img src="./images/y_social/y_awards.jpg" class="main-img-awards">
+          <div class="main-txt main-card-txt-awards wrap-sub">
+            <div class="main-title">제 15회 유일한상 수상자</div>
+            <p><i class="fa-solid fa-caret-right"></i>수상자: 김석태·엄계숙 부부(황산교회 목사), 김상훈·윤정희 부부(강릉아산병원 원목실 목사)</p>
+            <p><i class="fa-solid fa-caret-right"></i>공적사항<br>&lt;김석태·엄계숙 부부&gt;<br>- 13명의 자녀를 출산하여 사랑과 헌신으로 돌보고, 건강한 사회구성원으로 양육<br>- 협력과 배려의 공동체 의식을 통해 자녀를 교육하며 다자녀 가정의 모범을 제시<br>- 가족의 소중한 가치를 알리고, 출산 장려 문화를 확산하는 데 기여<br><br>&lt;김상훈·윤정희 부부&gt;<br>- 11명의 자녀를 입양하여 사랑과 헌신으로 돌보고, 건강한 사회구성원으로 양육<br>- 국내 최다 입양 가정으로, 입양문화 확산과 인식 개선에 기여<br>- 신장 기증, 공부방 운영, 기부 등 다양한 나눔과 봉사활동을 통해 이웃사랑 실천</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="main-sec main-sec-product">
-      <h2 class="blind">제품</h2>
-      <div class="main-product-wrap wrap">
-        <div class="product-hd-txt">
-          <div class="product-name"><span>PRODUCT</span></div>
-          <div class="product-txt"><span>우리는 타협하지 않는 품질 원칙으로<br> 국민의 건강한 삶을 위한 솔루션을 제공하겠습니다.<br> 세대를 넘어 사랑받아온 제품들로<br> 당신의 일상에 기분 좋은 활력을 더합니다.</span></div>
-        </div>
-        <div class="product-box-wrap">
-        <div class="product-box">
-          <div class="product-box-txt1 box-txt">
-            <span>삐콤·씨</span>
-            <span>지친 현대인에게 활력을 불어넣는 비타민의 대명사</span>
-          </div>
-          <div class="product-img">
-            <img src="/images/y_product/product_01.png" alt="제품 삐콤씨"> 
-          </div>
-        </div>
-        <div class="product-box">
-          <div class="product-box-txt2 box-txt">
-            <span>안티푸라민</span>
-            <span>90년 넘게 국민의 아픔을 달래온 유한의 역사</span>
-          </div>
-          <div class="product-img">
-            <img src="/images/y_product/product_03.png" alt="제품 안티푸라민"> 
-          </div>
-        </div>
-        <div class="product-box">
-          <div class="product-box-txt3 box-txt">
-            <span>렉라자</span>
-            <span>글로벌 시장을 뒤흔든 유한의 혁신 신약</span>
-          </div>
-          <div class="product-img">
-            <img src="/images/y_product/n_product_02.png" alt="제품 렉라자"> 
-          </div>
-        </div>
-        </div>
-      </div>
-    </section>
-    <section class="main-sec main-sec-official">
-      <h2 class="blind">유튜브</h2>
-      <div class="main-official-wrap wrap">
-        <div class="official-hd-txt">
-          <div class="official-name"><span>YUHAN OFFICIAL</span></div>
-          <div class="official-txt"><span>우리가 걷는 인류 건강의 길, 그 뜨거운 연구의<br> 기록들을 영상에 담았습니다.<br> 1등 제약사를 넘어 글로벌 혁신으로 나아가는<br> 유한양행의 가장 가까운 모습들.<br> 텍스트 너머의 생동감 넘치는 비전을<br> 공식 채널에서 지금 바로 만나보세요.</span></div>
-        </div>
-        <div class="official-prodyoutbe">
-          <div class="official-prod">
-            <div class="prod-txt">
-              <span>Classic Never Fades</span>
-              <span>100년의 시간을 넘어,<br> 당신의 일상 곁을 지켜온 가장 가까운 손길.</span>
+    <section class="main-sec main-sec-safety wrap-sub">
+      <h2 class="blind">안전보건활동</h2>
+      <div class="main-container safety-container">
+        <div class="main-title">안전보건활동</div>
+        <div class="main-txt main-txt-safeSys">유한양행은 2024년 안전보건경영시스템(ISO 45001)을 전 사업장으로 인증을 확대하여 운영하고 있습니다.<br>이 시스템은 체계적인 안전보건 계획의 수립, 실행, 점검, 조치 등을 통해 모든 활동이 표준화된 프로세스에 따라 이루어지도록 합니다. 또한, 전 과정에서 근로자들의 적극적인 참여를 확대하여 위험성 평가를 실시하고 있으며, 설문조사와 의견 청취를 통해 잠재적인 위험 요인을 발굴하고 있습니다.안전제안제도와 아차사고 발굴을 통해 선진 안전 문화를 구축하며, 지속적인 안전보건경영활동을 통해 안전하고 쾌적한 사업장을 만들기 위해 노력하고 있습니다.</div>
+          <div class="safety-imgs">
+            <div class="safety-img safety-img1">
+              <div class="main-txt">산업안전보건위원회</div>
             </div>
-            <div class="prod-img">
-              <img src="/images/y_youtube/anti.png" alt="안티푸라민 제품">
+            <div class="safety-img safety-img2">
+              <div class="main-txt">관리감독자 교육 강화</div>
             </div>
-          </div>
-          <div class="official-youtube">
-            <iframe src="https://www.youtube.com/embed/Rrova_2YAU4?autoplay=0&mute=0" frameborder="0" class="youtube-movie"></iframe>
-          </div>
+            <div class="safety-img safety-img3">
+              <div class="main-txt">안전점검, 유해·위험요인<br>점검 및 제거</div>
+            </div>
+            <div class="safety-img safety-img4">
+              <div class="main-txt">안전제안제도</div>
+            </div>
+            <div class="safety-img safety-img5">
+              <div class="main-txt">금연프로그램</div>
+            </div>
+            <div class="safety-img safety-img6">
+              <div class="main-txt">건강증진 프로그램</div>
+            </div>
+            <div class="safety-img safety-img7">
+              <div class="main-txt">근골격계  유해 요인<br>조사 및 조치</div>
+            </div>
+            <div class="safety-img safety-img8">
+              <div class="main-txt">작업환경측정</div>
+            </div>
         </div>
-      </div>
-    </section>
-    <section class="main-sec-esg">
-      <h2 class="blind">ESG</h2>
-      <div class="main-esg-container wrap">
-        <div class="main-esg-txt-wrap">
-          <h3>Sustainability</h3>
-          <span>창업주 유일한 박사의 정신을 이어받아 정직한 기업 문화를 실천합니다.</span>
-        </div>
-        <div class="esg-card">
-          <div class="e-content" style="background-image: url(./images/y_esg/esg_e.png);">
-            <span class="esg-label">E</span>
-            <span class="esg-title">환경경영</span>
-            <span class="esg-desc">자연과 함께 숨 쉬는 내일을 만듭니다</span>
-          </div>
-          <a href="/social.html" class="s-content" style="background-image: url(./images/y_esg/esg_s.png);">
-            <span class="esg-label">S</span>
-            <span class="esg-title">사회공헌</span>
-            <span class="esg-desc">가장 좋은 상품으로 사회에 봉사합니다</span>
-          </a>
-          <div class="g-content" style="background-image: url(./images/y_esg/esg_g.png);">
-            <span class="esg-label">G</span>
-            <span class="esg-title">윤리경영</span>
-            <span class="esg-desc">가장 존경받는 기업, 그 이상의 가치를 지킵니다</span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="main-sec main-sec-brandsite">
-      <h2 class="blind">브랜드 사이트</h2>
-      <div class="main-brandsite-container wrap">
-        <div class="main-brandsite-txt-wrap">
-          <h3>BRAND SITE</h3>
-          <div class="main-brandsite-txt">
-            <span>기업의 성장이 곧 사회의 행복이 된다는 유한만의 철학은 세상 어디에도 없는 우리의 긍지입니다.<br>정직한 브랜드가 만드는 선한 영향력으로 대한민국이 가장 자랑스러워하는 기업으로 남겠습니다.</span>
-          </div>
-        </div>
-        <div class="brand-container">
-          <div class="brandsite-scroll-wrap brand-swiper">
-            <ul class="brand-list swiper-wrapper">
-              <li class="swiper-slide"><img src="./images/y_brandsite/brandsite-1.jpg" alt="유한락스"></li>
-              <li class="swiper-slide"><img src="./images/y_brandsite/brandsite-2.jpg" alt="웰니스"></li>
-              <li class="swiper-slide"><img src="./images/y_brandsite/brandsite-3.jpg" alt="암앤해머"></li>
-              <li class="swiper-slide"><img src="./images/y_brandsite/brandsite-4.jpg" alt="삐콤씨"></li>
-              <li class="swiper-slide"><img src="./images/y_brandsite/brandsite-5.jpg" alt="닥터버들"></li>
-              <li class="swiper-slide"><img src="./images/y_brandsite/brandsite-6.jpg" alt="워렌텍"></li>
-              <li class="swiper-slide"><img src="./images/y_brandsite/brandsite-7.jpg" alt="안티푸라민"></li>
-              <li class="swiper-slide"><img src="./images/y_brandsite/brandsite-8.jpg" alt="비타민씨"></li>
-              <li class="swiper-slide"><img src="./images/y_brandsite/brandsite-9.jpg" alt="세탁세제"></li>
-            </ul>
-          </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-      </div>
     </section>
   </main>
 
-  <!-- pc 푸터 -->
+   <!-- pc 푸터 -->
   <footer id="yh-ft-pc" class="wh">
     <div class="ft-container wrap">
       <div class="ft-wrap">
@@ -391,7 +266,7 @@
               <a href="#">지속가능경영</a>
               <ul class="ft-depth2">
                 <li><a href="#">환경경영</a></li>
-                <li><a href="/social.html">사회공헌</a></li>
+                <li><a href="#">사회공헌</a></li>
                 <li><a href="#">윤리경영</a></li>
               </ul>
             </li>
@@ -507,7 +382,7 @@
                       <a href="#">지속가능경영</a>
                       <ul class="ft-depth2-mo">
                         <li><a href="#">환경경영</a></li>
-                        <li><a href="/social.html">사회공헌</a></li>
+                        <li><a href="#">사회공헌</a></li>
                         <li><a href="#">윤리경영</a></li>
                       </ul>
                     </li>
@@ -584,7 +459,7 @@
           <a href="#">지속가능경영</a>
           <ul class="mo-depth2">
             <li><a href="#">환경경영</a></li>
-            <li><a href="/social.html">사회공헌</a></li>
+            <li><a href="#">사회공헌</a></li>
             <li><a href="#">윤리경영</a></li>
           </ul>
         </li>
@@ -615,5 +490,4 @@
     </nav>
   </div>
 </body>
-
 </html>

@@ -1,6 +1,11 @@
 $(function () {
   //변수
   const body = "body";
+  const hd = $(".yh-hd");
+  const ft = $("#yh-ft-pc");
+  const hdBg = ".wh-bg";
+  const hdBgGnb = ".wh-bg-gnb";
+  const gnb = "#yh-gnb";
   const mainMenu = ".depth1";
   const subMenu = ".depth2-wrap";
   const stiemapBtn = ".sitemap-btn";
@@ -9,21 +14,19 @@ $(function () {
   const smMainMenu = ".mo-depth1 > a";
   const smSubMenu = ".mo-depth2";
   const blankAnchor = "a[href='#']";
+  const spare = 60;
   let scTop = $(window).scrollTop();
+  let hdHeight = hd.height();
+  let ftOffset = ft.offset().top - 200;
 
+  
   // 반응형 구현
   rwd();
   $(window).resize(function(){
     rwd();
   });
 
-  // PC GNB 구현 : depth1에 마우스가 진입하면 depth2가 슬라이드다운
-  $(mainMenu).mouseenter(function() {
-    $(this).find(subMenu).stop().slideDown(300);
-  });
-  $(mainMenu).mouseleave(function() {
-    $(this).find(subMenu).stop().slideUp(300);
-  });
+  
   
   // 언어선택
   $(".lang-btn").click(function(){
@@ -88,25 +91,6 @@ $(function () {
     $(smSubMenu).attr("style","");
   }
 
-//   $(function() {
-//   // 헤더 전체에 마우스 진입 시
-//   $('.yh-hd').mouseenter(function() {
-//     $(this).addClass('active');
-//     $('.yh-logo img').attr('src', '../images/y_logo_bk.svg'); 
-//   });
-//   // 헤더에서 마우스가 나갈 때
-//   $('.yh-hd').mouseleave(function() {
-//     $(this).removeClass('active');
-//     $('.yh-logo img').attr('src', 'images/y_logo_wh.svg');
-//   });
-// });
-
-  // 헤더 제어
-  const hd = $(".yh-hd");
-  const ft = $("#yh-ft-pc");
-  let hdHeight = hd.height();
-  let ftOffset = ft.offset().top - 200;
-
   //console.log(scTop);
   $(window).scroll(function(){
     scTop = $(window).scrollTop();
@@ -121,6 +105,46 @@ $(function () {
     } else {
       hd.fadeIn(300);
     }
+  });
+
+
+
+  // gnb 흰 배경
+  let d2Height = [];
+  $(".yh-gnb > .depth1").each(function(){
+    let num = $(this).index();
+    //console.log(num);
+    d2Height[num] = $(this).find(".depth2").height();
+  });
+  $(subMenu).hide();
+  console.log(d2Height);
+  // PC GNB 구현 : depth1에 마우스가 진입하면 depth2가 슬라이드다운
+  let idx;
+  $(hd).mouseenter(function() {
+    $(this).addClass("yh-hd-wh"); // 흰색 테마 클래스 추가
+    $(hdBg).stop().animate({ opacity: 1 }, 150);
+  });
+  $(hd).mouseleave(function() {
+    // 서브메뉴가 열려있지 않을 때만 클래스 제거 (선택 사항)
+    $(this).removeClass("yh-hd-wh"); 
+    $(hdBg).stop().animate({ opacity: 0 }, 150);
+    $(hdBgGnb).stop().css("height", 0);
+    $(subMenu).stop().slideUp(300);
+  });
+  $(mainMenu).mouseenter(function() {
+    idx = $(this).index(); 
+    //console.log(idx);  
+    if(idx == $(mainMenu).length - 1) {
+      $(hdBgGnb).stop().css("height", 0);
+    } else {
+      $(this).siblings().find(subMenu).stop().slideUp(300);
+      $(this).find(subMenu).stop().slideDown(300);
+      $(hdBgGnb).stop().css("height", d2Height[idx] + spare);
+    }
+  });
+  $(hdBgGnb).mouseleave(function() {
+    $(subMenu).stop().slideUp(300);
+    $(this).stop().css("height", 0);
   });
 
 });
