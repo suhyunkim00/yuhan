@@ -146,6 +146,9 @@
   justify-content: space-evenly;
   align-items: center; 
  }
+ .main-sec-official {
+    background: url('../images/y_youtube/line-tb.jpg') center center / cover no-repeat;
+ }
  .prod-txt > span:nth-child(1) {
   font-size: 30px;
  }

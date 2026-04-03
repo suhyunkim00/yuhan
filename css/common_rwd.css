@@ -57,6 +57,10 @@
   .ft-info-dl-mo dd:after {
     display: none;
   }
+  .ft-site-list-mo {
+    top: auto;
+    bottom: 40px;
+  } 
   
 }
 

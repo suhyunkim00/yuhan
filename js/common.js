@@ -39,7 +39,7 @@ $(function () {
   });
   // 모바일푸터 gnb 버튼
   $(".ft-depth1-mo > a").click(function(e) {
-  e.preventDefault(); // <a> 태그의 기본 링크 이동 막기
+  e.preventDefault();
   $(this).parent().siblings().find(".ft-depth2-mo").stop().slideUp(300);
   $(this).parent().siblings().removeClass("active");
   $(this).next().stop().slideToggle(300);
@@ -63,7 +63,7 @@ $(function () {
 
    // 모바일 메뉴 펼치기/접기
   $(smMainMenu).click(function(e) {
-    if($(body).hasClass("mo")){ //모바일 해상도에서면 실행
+    if(!$(body).hasClass("pc")){ 
       e.preventDefault();
       $(this).parent().siblings().find(smSubMenu).stop().slideUp(300);
       $(this).next().stop().slideToggle(300);
