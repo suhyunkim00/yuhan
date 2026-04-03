@@ -91,22 +91,28 @@ $(function () {
     $(smSubMenu).attr("style","");
   }
 
-  //console.log(scTop);
+
   $(window).scroll(function(){
     scTop = $(window).scrollTop();
-    if(scTop > hdHeight) { //헤더만큼 스크롤 됐을 때
+    if(scTop > 100) { //헤더만큼 스크롤 됐을 때
       hd.addClass("fixed");
     } else {
       hd.removeClass("fixed");
     }
     // 푸터가 화면에 표시 될 때쯤 헤더 숨기기
-    if(scTop > ftOffset){
-      hd.fadeOut(300);
+    // pc 푸터(#yh-ft-pc)가 보이면 그걸 쓰고, 아니면 mo 푸터(#yh-ft-mo)를 씁니다.
+    let targetFt = $("#yh-ft-pc").is(":visible") ? $("#yh-ft-pc") : $("#yh-ft-mo");
+    
+    // 이미지가 로딩되면서 높이가 변할 수 있으므로 실시간으로 위치를 계산합니다.
+    let currentFtOffset = targetFt.offset().top - $(window).height() + 200; 
+
+    // 3. 푸터 도달 시 헤더 페이드 아웃
+    if (scTop > currentFtOffset) {
+      if (hd.is(':visible')) hd.stop().fadeOut(300);
     } else {
-      hd.fadeIn(300);
+      if (!hd.is(':visible')) hd.stop().fadeIn(300);
     }
   });
-
 
 
   // gnb 흰 배경

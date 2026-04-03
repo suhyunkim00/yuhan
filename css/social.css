@@ -2,6 +2,9 @@
 /* 웹폰트 연결 */
 @import url('webfonts.css');
 @import url('var.css');
+.wrap-sub {
+  padding: 0 16px;
+}
 /* LNB */
 .yh-lnb-soc {
   text-shadow: none;

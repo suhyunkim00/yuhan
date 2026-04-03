@@ -239,8 +239,9 @@ body {}
 .ft-wrap {
   display: flex;
   justify-content: space-between;
-  padding: 80px 0 30px;
+  padding: 60px 0 60px;
   width: 1502px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 }
 .ft-company-wrap {}
 .ft-logo {
@@ -381,9 +382,7 @@ body {}
   display: flex;
   justify-content: space-between;
   align-items: center; 
-  margin-top: 60px;
   padding-top: 30px;
-  border-top: 1px solid rgba(255, 255, 255, 0.6);
 }
 .ft-copy {
   font-size: 14px;
