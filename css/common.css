@@ -112,6 +112,7 @@ body {}
 .yh-hd.fixed {
   position: fixed;
   top: 0;
+  background-color: #fff;
 }
 .yh-hd.fixed .yh-gnb .depth1 > a {
     color: #000 !important; 
@@ -410,7 +411,7 @@ body {}
 /* mo 푸터 */
 #yh-ft-mo {
   padding: 57px 16px 17px 16px;
-  background-color: #454545;
+  background-color: #222;
   width: 100%;
   /* padding-bottom: 50px; */
 }
@@ -609,7 +610,7 @@ body {}
 }
 #yh-mo-gnb {
   height: calc(100vh - 80px);
-  padding: 1.5em;
+  padding: 0 30px 0 16px;
   padding-top: 0;
   overflow: auto;
 }

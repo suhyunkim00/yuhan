@@ -295,15 +295,16 @@
     border-left: 2px solid rgba(255,255,255,0.3);
     border-radius: 2px;
     height: 240px;
+    width: 33%;
   }
   .company-vision-pc {}
   .cp-title-pc {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600;
     padding-left: 20px;
   }
   .cp-sub-pc {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;  
     padding-left: 20px;
   }
@@ -315,15 +316,15 @@
   }
   .cp-vision-ts:before {
     content: '\f84a';
-    font-size: 50px;
+    font-size: 60px;
   }
   .cp-ceo-ts:before {
       content: '\e659';
-      font-size: 50px;
+      font-size: 60px;
   }
   .cp-news-ts:before {
       content: '\efad';
-      font-size: 50px;
+      font-size: 60px;
   }
   .cp-vision-ts, .cp-ceo-ts, .cp-news-ts {
     display: flex;    
@@ -335,7 +336,7 @@
   .cp-news-ts:before {
       font-family: var(--google-icon);
       padding-right: 10px;
-      transform: translateY(-10px);
+      transform: translateY(-8px);
   }
   .main-company-wrap-mo {display: none;}
   .main-company-wrap-pc {display: block;}
@@ -351,7 +352,7 @@
     position: relative;
     width: 33%;
     height: 450px;
-    padding: 50px 27px 38px 46px;
+    padding: 50px 46px 38px 46px;
   }
   .box-txt span:nth-child(1) {
     font-size: 36px;
@@ -370,9 +371,9 @@
   }
   .product-img {
     position: absolute;
-    right: 20px;  /* 오른쪽 여백 */
-    bottom: 20px; /* 아래쪽 여백 */
-    width: 300px; /* 여기서 너비를 잡아줌 */
+    right: 46px;  /* 오른쪽 여백 */
+    bottom: 38px; /* 아래쪽 여백 */
+    width: 280px; /* 여기서 너비를 잡아줌 */
     display: block;
   }
   .product-img > img {

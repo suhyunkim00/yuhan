@@ -115,15 +115,67 @@
     color: var(--main-color);
   }
   .lang-list {
-    left: 40%;
-  }
-  .sitemap-btn {
-    display: none;
+    left: 20%;
   }
   #yh-ft-pc {
     display: block;
   }
   #yh-ft-mo {
     display: none;
+  }
+
+  /* 전체메뉴 사이트맵 */
+  .mo-gnb-sitemap {
+    width: 100%;
+  }
+  .mo-gnb-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* max-width: 1500px; */
+    height: 100px;
+    margin: auto;
+  }
+  .yh-mo-gnb {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 1500px;
+    margin: 0 auto;
+    gap: 20px; 
+    padding: 0 20px;
+  }
+  .yh-mo-gnb .mo-depth1 {
+    width: 15.5%;
+    padding: 30px 20px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 24px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: left;
+  }
+  .mo-depth1 > a {
+    font-size: 24px;
+    padding-left: 20px;
+    line-height: inherit;
+  }
+  .mo-depth1 > a:after {
+    display: inline-block; /* 다시 보이게 설정 */
+    content: none;
+  }
+  .mo-depth1:last-child > a:after {
+    content: '\e89e';
+    font-family: var(--google-icon);
+    font-size: 18px;
+  }
+  .mo-depth2 {
+    display: block;
+    background-color: #fff;
+    margin: 0;
+    font-size: 18px;
+    padding: 10px 0 0 20px;
+  }
+  .mo-depth2 > li > a:hover {
+    color: var(--main-color);
   }
 }
