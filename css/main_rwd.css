@@ -3,18 +3,22 @@
 
 /* 1. mo ~767px까지 */
 @media all and (max-width: 767px) {
-  
+  .swiper-button-prev {
+    display: none;
+  }
+  .swiper-button-next {
+    display: none;
+  }
 }
 
 /* 2. tb 768px부터~ */
 @media all and (min-width: 768px) {
   .main-sec{
-    padding: 20px 0;
+    padding: 60px 0;
   }
   
-
  .main-sec-hero {
-    height: 170vh;  
+    /* height: 170vh;   */
   }
   .main-hero-txt {
     font-size: 90px;
@@ -22,18 +26,19 @@
     line-height: 1.4;
   }
   .main-hero-txt2 {
-    margin-top: 230px;
+    margin-top: 255px;
     margin-right: 50%;
+    padding-bottom: 115px;
   }
   .main-hero-txt2:before, .main-hero-txt2:after{
     height: 100px;
     margin-right: 47.8%;
   }
   .main-hero-txt2:before {
-    top: 1350px;
+    top: 1360px;
   }
   .main-hero-txt2:after {
-    top: 1530px;
+    top: 1540px;
   }
   
   
@@ -45,8 +50,8 @@
   .main-story-container {
     position: relative;
     display: flex;
-    align-items: center; 
-    height: 100%;
+    align-items: stretch;
+    height: auto;
   }
   .main-story-txt-wrap {
     width: 50%;
@@ -55,10 +60,15 @@
     gap: 10px;
     flex-direction: column;
     justify-content: center;
-    color: #000; /* 배경이 흰색이니 글자는 검정으로 */
+    color: #000; 
+    height: auto; 
+    align-self: stretch;
+    padding: 0;
   }
   .main-story-name {
     font-size: 40px;
+    color: #000;
+    text-shadow: inherit;
   }
  .main-story-txt-pc {
     font-size: 12px;
@@ -68,9 +78,10 @@
     color: var(--main-color);
   }
   .main-story-container > img {
+    display: block;
     position: relative;
     width: 50vw;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     left: auto;
     top: auto;
@@ -103,14 +114,14 @@
     font-weight: 400;
     margin-bottom: 40px;
   }
-  .product-box-wrap {
+  .product-box-wrap .swiper-wrapper {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     justify-content: space-between;
     align-items: center;
   }
-  .product-box {
-    width: 240px;
+  .product-box.swiper-slide {
+    width: 34.5%;
     height: 240px;
     margin-bottom: 0;
   }
@@ -131,6 +142,19 @@
   .product-img > img {
     width: 140px;
   }
+  .swiper-pagination {
+    display: none;
+  }
+  .product-box {
+  position: relative; /* 기준점 설정 */
+  padding-bottom: 100px; /* 이미지 공간 확보 (이미지 높이에 맞춰 조절) */
+}
+  .product-img {
+    position: absolute;
+    right: 20px; 
+    bottom: 20px; 
+}
+
 
   .official-hd-txt {
     text-align: inherit;
@@ -188,13 +212,26 @@
   }
   .e-content, .s-content, .g-content {
     background-position: center center;
-    padding: 200px 0;
+    padding: 0; 
+    aspect-ratio: 16 / 9; /* 가로로 길쭉한 비율 */
+    height: auto;
+  }
+  .e-content:before,
+  .s-content:before,
+  .g-content:before {
+  
   }
   .esg-card span {
     position: relative;
     width: 100%;
     height: auto;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  }
+  .swiper-button-prev {
+    display: block;
+  }
+  .swiper-button-next {
+    display: block;
   }
 }
 
@@ -205,24 +242,29 @@
   }
   
   .main-sec-hero {
-    height: 200vh;  
+    /* height: 200vh;   */
   }
   .main-hero-txt {
     font-size: 132px;
-    padding-top: 615px;
+    padding-top: 683px;
+  }
+  .main-hero-txt2 {
+    padding-bottom: 165px; 
   }
   .main-hero-txt2:before, .main-hero-txt2:after{
     height: 150px;
-    margin-right: 49.1%;
+    margin-right: 49.16%;
   }
   .main-hero-txt2:before {
-    top: 1530px;
+    top: 1540px;
   }
   .main-hero-txt2:after {
-    top: 1760px;
+    top: 1770px;
   }
 
-  
+  .main-story-container.wrap {
+    padding: 0;
+  }
   .main-story-txt-wrap {
     gap: 20px;
   }
@@ -304,14 +346,16 @@
   }
   .product-txt {
     font-size: 20px;
-    margin-bottom: 93px;
+    padding: 0;
   }
   .product-box-wrap {
     gap: 48px;
+    padding: 0 10px 10px 0;
   }
-  .product-box {
-    width: 480px;
-    height: 480px;
+  .product-box.swiper-slide {
+    position: relative;
+    width: 30%;
+    height: 450px;
     padding: 50px 27px 38px 46px;
   }
   .box-txt span:nth-child(1) {
@@ -326,10 +370,19 @@
     width: 180px;
   }
   .box-txt {
-    padding-bottom: 78px;
+    align-items: flex-start; /* 글씨들을 왼쪽 끝으로 정렬 */
+    text-align: left;
+  }
+  .product-img {
+    position: absolute;
+    right: 20px;  /* 오른쪽 여백 */
+    bottom: 20px; /* 아래쪽 여백 */
+    width: 300px; /* 여기서 너비를 잡아줌 */
+    display: block;
   }
   .product-img > img {
-    width: 300px;
+    width: 100%; 
+    height: auto;
   }
 
   .main-sec-official {
@@ -399,7 +452,7 @@
   }
   /* esg */
   .main-sec-esg {
-    padding: 0;
+    padding: 96px 0;
   }
   .main-sec-esg .wrap {
     max-width: 100%;
@@ -408,26 +461,23 @@
     margin: auto;
   }
   .main-esg-container {
-    position: relative;
-    display: block;
+    display: flex;
+    flex-direction: column; /* 세로로 제목 -> 카드 순서 배치 */
     width: 100%;
     height: auto;
+    padding: 100px 5%; /* 상하 여백 100px, 좌우 여백 5%로 안정감 부여 */
   }
   .main-esg-txt-wrap {
-    position: absolute;
-    top: 100px;
-    left: 5%;
-    right: 50px;
-    z-index: 5;
-    text-align: right;
-    color: #fff;
-    pointer-events: none;
+    position: static; 
+    text-align: left; /* 왼쪽 정렬로 변경 */
+    color: #000;      /* 두 번째 사진처럼 배경이 흰색이면 검정색으로 */
+    margin-bottom: 50px; /* 제목과 카드 사이의 간격 */
+    padding-left: 92px;
   }
   .main-esg-txt-wrap h3 {
     font-size: 90px;
     font-weight: 800;
     margin: 0;
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
   }
   .main-esg-txt-wrap span {
     font-size: 20px;
@@ -437,6 +487,7 @@
   .esg-card {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: stretch;
     gap: 0;
     width: 100%;
@@ -470,14 +521,10 @@
     background-position: center center;
   }
   .e-content, .s-content, .g-content {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  box-sizing: border-box;
-  overflow: hidden;
+    aspect-ratio: 1 / 1; /* 세로로 약간 긴 직사각형 형태 */
+    flex: 1; /* 세 카드가 동일한 너비를 가짐 */
+    height: auto;
+    border-radius: 0;
   }
   .e-content:before, .s-content:before, .g-content:before {
     content: "";
@@ -530,9 +577,16 @@
   .brand-swiper {
     width: 100%;
     padding: 0;
+    overflow: visible;
+  }
+  .swiper-wrapper {
+    width: 100% !important; /* 모바일의 90% 설정을 덮어씌움 */
+    display: flex;
   }
   .swiper-slide img {
     width: 100%;
   }
-  .swiper-button-next, .swiper-button-prev {}
+  .swiper-button-next, .swiper-button-prev {
+    display: none;
+  }
 }

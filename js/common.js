@@ -123,7 +123,7 @@ $(function () {
     d2Height[num] = $(this).find(".depth2").height();
   });
   $(subMenu).hide();
-  console.log(d2Height);
+  // console.log(d2Height);
   // PC GNB 구현 : depth1에 마우스가 진입하면 depth2가 슬라이드다운
   let idx;
   $(hd).mouseenter(function() {
@@ -141,6 +141,7 @@ $(function () {
     idx = $(this).index(); 
     //console.log(idx);  
     if(idx == $(mainMenu).length - 1) {
+      $(subMenu).stop().slideUp(300);
       $(hdBgGnb).stop().css("height", 0);
     } else {
       $(this).siblings().find(subMenu).stop().slideUp(300);
