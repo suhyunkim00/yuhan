@@ -5,12 +5,11 @@
 .yh-lnb-gov {
   text-shadow: none;
 }
-.yh-lnb-list li:last-child {
+.yh-lnb-list a:last-child {
     background-color: rgba(255, 255, 255, 0.9);
+    color: var(--txt-color);
 }
-.yh-lnb-list li:last-child a {
-  color: var(--txt-color);
-}
+
 /* 메인 */
 .govern-card,
 .conduct-card {

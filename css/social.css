@@ -6,16 +6,15 @@
 .yh-lnb-soc {
   text-shadow: none;
 }
-.yh-lnb-list li:nth-child(2) {
+.yh-lnb-list a:nth-child(2) {
   background-color: rgba(255, 255, 255, 0.9);
-}
-.yh-lnb-list li:nth-child(2) a {
   color: var(--txt-color);
 }
 
 /* 메인 */
 .csrStr-container,
-.csrSys-container {
+.csrSys-container,
+.awards-container {
   align-items: center;
 }
 .main-img-csrStr {

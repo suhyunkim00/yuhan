@@ -5,12 +5,9 @@
 .yh-lnb-env {
   text-shadow: none;
 }
-.yh-lnb-list li:first-child {
+.yh-lnb-list a:first-child {
   background-color: rgba(255, 255, 255, 0.9);
-}
-.yh-lnb-list li:first-child a {
   color: var(--txt-color);
-  text-shadow: inherit;
 }
 .card-title {
   font-weight: 700;
@@ -44,7 +41,7 @@
   flex-direction: column;
   width: 100%;
   gap: 20px;
-  border-radius: 8px;
+  border-radius: 16px;
   border: 1px solid rgb(0, 0, 0, 0.3);
 }
 .greenAct-card-img {
@@ -59,7 +56,7 @@
   object-fit: cover;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  border-bottom: 1px solid rgb(0, 0, 0, 0.3);
+  border-bottom: 1px solid #eee;
 }
 .greenAct-card-desc {
   display: flex;

@@ -241,12 +241,11 @@ body {}
 /* pc 푸터 */
 #yh-ft-pc {
   padding: 30px 0;
-  background-color: #454545;
+  background-color: #222;
 }
 .ft-container {
   position: relative;
   color: #fff;
-  width: 1518px;
 }
 .ft-container a {
   color: #fff;
@@ -255,7 +254,6 @@ body {}
   display: flex;
   justify-content: space-between;
   padding: 60px 0 60px;
-  width: 1502px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 }
 .ft-company-wrap {}
@@ -389,6 +387,7 @@ body {}
   font-size: 18px;
   padding-top: 10px;
   white-space: nowrap;
+  font-weight: 300;
 }
 .ft-depth2 li {
   padding: 5px 0;

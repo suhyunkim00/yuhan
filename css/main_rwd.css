@@ -121,7 +121,7 @@
     align-items: center;
   }
   .product-box.swiper-slide {
-    width: 34.5%;
+    width: 33.5%;
     height: 240px;
     margin-bottom: 0;
   }
@@ -148,13 +148,12 @@
   .product-box {
   position: relative; /* 기준점 설정 */
   padding-bottom: 100px; /* 이미지 공간 확보 (이미지 높이에 맞춰 조절) */
-}
+  }
   .product-img {
     position: absolute;
     right: 20px; 
     bottom: 20px; 
-}
-
+  }
 
   .official-hd-txt {
     text-align: inherit;
@@ -219,7 +218,7 @@
   .e-content:before,
   .s-content:before,
   .g-content:before {
-  
+    background-position: center center;
   }
   .esg-card span {
     position: relative;
@@ -293,7 +292,7 @@
     padding-top: 60px;
   }
   .company-vision-pc, .company-ceo-pc, .company-news-pc {
-    border-left: 2px solid #fff;
+    border-left: 2px solid rgba(255,255,255,0.3);
     border-radius: 2px;
     height: 240px;
   }
@@ -348,13 +347,9 @@
     font-size: 20px;
     padding: 0;
   }
-  .product-box-wrap {
-    gap: 48px;
-    padding: 0 10px 10px 0;
-  }
   .product-box.swiper-slide {
     position: relative;
-    width: 30%;
+    width: 33%;
     height: 450px;
     padding: 50px 27px 38px 46px;
   }
@@ -506,20 +501,9 @@
     font-size: 16px;
     font-weight: 600;
   }
-  .e-content {
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-  .s-content {
-    background-size: cover;
-    background-position: center center;
-  }
-  .g-content {
-    background-size: cover;
-    background-position: center center;
-  }
+  .e-content {}
+  .s-content {}
+  .g-content {}
   .e-content, .s-content, .g-content {
     aspect-ratio: 1 / 1; /* 세로로 약간 긴 직사각형 형태 */
     flex: 1; /* 세 카드가 동일한 너비를 가짐 */
@@ -539,6 +523,7 @@
   .e-content:hover:before, .s-content:hover:before, .g-content:hover:before {
     background-color: transparent;
     transition: 0.3s;
+    filter: inherit;
   }
   .esg-card span {
     position: relative;
@@ -580,7 +565,7 @@
     overflow: visible;
   }
   .swiper-wrapper {
-    width: 100% !important; /* 모바일의 90% 설정을 덮어씌움 */
+    width: 95%;
     display: flex;
   }
   .swiper-slide img {
