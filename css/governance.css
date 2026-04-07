@@ -6,8 +6,47 @@
   text-shadow: none;
 }
 .yh-lnb-list li:last-child {
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 .yh-lnb-list li:last-child a {
   color: var(--txt-color);
+}
+/* 메인 */
+.govern-card,
+.conduct-card {
+  width: 100%;
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.conduct-card span {
+  border-bottom: 1px solid var(--sub-gray-color);
+}
+.conduct-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+.cp-container span,
+.compliance-container span {
+  font-weight: 700;
+}
+.cp-container img,
+.compliance-container img{
+  width: 100%;
+}
+.title-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.title-wrap .main-title {
+  width: 50%;
+}
+.council-table {
+  min-width: 800px; /* 중요: 화면보다 크게 만들어야 스크롤 생김 */
 }

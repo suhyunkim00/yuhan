@@ -3,21 +3,24 @@
 @import url('webfonts.css');
 @import url('var.css');
 /* 공용 */
+.wrap-sub {
+  padding: 0 16px;
+}
 #yh-esg {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 100px;
 }
 .main-sec:first-child {
-  padding-top: 20px;
+  padding-top: 50px;
 }
 .main-sec:last-child {
-  padding-bottom: 20px;
+  padding-bottom: 50px;
 }
 .main-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 30px;
 }
 .main-title {
@@ -27,14 +30,14 @@
 }
 .main-txt {
   font-size: 16px;
-  line-height: 21px;
+  line-height: 1.8;
 }
 
 
 /* LNB */
 .sub-hd {
   background: url(../images/y_esg/lnb_bg.jpg) center center / cover no-repeat;
-  height: 50vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -76,7 +79,7 @@
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 .yh-lnb-list li:hover {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 .yh-lnb-list li:hover a {
   color: var(--txt-color);
@@ -89,56 +92,6 @@
 /* 2. tb 768px부터~ */
 @media all and (min-width: 768px) {
   #yh-esg {
-    gap: 60px;
-  }
-  .main-sec:first-child {
-    padding-top: 30px;
-  }
-  .main-sec:last-child {
-    padding-bottom: 30px;
-  }
-  .main-container {
-    gap: 40px;
-  }
-  .wrap-sub {
-    padding: 0 100px;
-  }
-  .main-title {
-    font-size: 24px;
-    font-weight: 600;
-  }
-  .main-txt {
-    font-size: 18px;
-    line-height: 22px;
-  }
-  .sub-hd {
-      height: 60vh;
-  }
-  .sub-hero-contents {
-      bottom: calc(50% - 60px);
-      left: calc(50% - 160px);
-  }
-  .sub-hero-title {
-      font-size: 48px;
-      font-weight: 700;
-  }
-  .sub-hero-txt-en {
-      font-size: 22px;
-  }
-  .sub-hero-txt-ko {
-      font-size: 20px;
-  }
-  .yh-lnb-list {
-      height: 50px;
-  }
-  .yh-lnb-btn {
-      font-size: 19px;
-  }
-}
-
-/* 4. pc 1280px부터~ */
-@media all and (min-width: 1280px) {
-  #yh-esg {
     gap: 96px;
   }
   .main-sec:first-child {
@@ -146,6 +99,53 @@
   }
   .main-sec:last-child {
     padding-bottom: 48px;
+  }
+  .main-container {
+    gap: 40px;
+  }
+  .wrap-sub {
+    padding: 0 96px;
+  }
+  .main-title {
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .main-txt {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .sub-hero-contents {
+    bottom: calc(50% - 60px);
+    left: calc(50% - 160px);
+  }
+  .sub-hero-title {
+    font-size: 48px;
+    font-weight: 700;
+  }
+  .sub-hero-txt-en {
+    font-size: 22px;
+  }
+  .sub-hero-txt-ko {
+    font-size: 20px;
+  }
+  .yh-lnb-list {
+    height: 50px;
+  }
+  .yh-lnb-btn {
+    font-size: 19px;
+  }
+}
+
+/* 4. pc 1280px부터~ */
+@media all and (min-width: 1280px) {
+  #yh-esg {
+    gap: 192px;
+  }
+  .main-sec:first-child {
+    padding-top: 96px;
+  }
+  .main-sec:last-child {
+    padding-bottom: 96px;
   }
   .main-container {
     gap: 50px;
@@ -158,8 +158,11 @@
     font-size: 20px;
     line-height: 30px;
   }
+  .wrap-sub {
+    padding: 0 250px;
+  }
   .sub-hd {
-      height: 75vh;
+    height: 80vh;
   }
   .sub-hero-contents {
       bottom: calc(50% - 80px);

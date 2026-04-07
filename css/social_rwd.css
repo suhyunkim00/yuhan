@@ -8,12 +8,9 @@
 @media all and (min-width: 768px) {
   .main-img-csrStr,
   .main-img-csrSys {
-    width: 70%;
+    width: 90%;
     max-width: 900px;
   }
-   .main-img-csrStr {
-    width: 60%;
-   }
   .safeSys-card-imgs {
     gap: 20px;
   }
@@ -24,6 +21,11 @@
 
 /* 4. pc 1280px부터~ */
 @media all and (min-width: 1280px) {
+  .main-img-csrStr,
+  .main-img-csrSys {
+    width: 70%;
+    max-width: 900px;
+  }
   .main-card-awards { 
     width:50%;
   }

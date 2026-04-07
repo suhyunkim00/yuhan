@@ -39,11 +39,19 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-td, th {
-  border: 1px solid #828282;
-  border-width: 0px 1px 1px 0px;
+thead {
+  background-color: var(--sub-gray-color);
 }
-td:last-child, th:last-child { /* 테이블은 수현씨한테 체크 */
+td, th {
+  border: 1px solid rgba(130, 130, 130, 0.3);
+  border-width: 0px 1px 1px 0px;
+  text-align: center;
+  padding: 16px;
+}
+th {
+  border-top-width: 1px;  
+}
+td:last-child, th:last-child {
   border-right-width: 0;
 }
 iframe {
@@ -81,6 +89,13 @@ button {
   left: -9999em;
 }
 body {}
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+.table-wrap::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
 
 /* 헤더 */
 .yh-hd {

@@ -1,25 +1,22 @@
 <!DOCTYPE html>
-<html lang="ko">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>유한양행</title>
-  <link rel="stylesheet" href="./css/common.css">
-  <link rel="stylesheet" href="./css/common_rwd.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/main_rwd.css">
-  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-icon-180x180.png">
-  <script src="./js/jquery-1.12.4.min.js"></script>
-  <script src='./js/jquery-ui.min.js'></script>
-  <script src="./js/lenis.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="./js/common.js"></script>
-  <script src="./js/main.js"></script>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지속가능경영</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/common_rwd.css">
+    <link rel="stylesheet" href="./css/sub.css">
+    <link rel="stylesheet" href="./css/governance.css">
+    <link rel="stylesheet" href="./css/governance_rwd.css">
+    <link rel="icon" href="./images/favicon.svg" type="image/svg">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src='./js/jquery-ui.min.js'></script>
+    <script src="./js/lenis.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/sub.js"></script>
 
+</head>
 <body>
   <!-- 헤더 -->
   <header class="yh-hd">
@@ -107,225 +104,154 @@
     </div>
   </header>
 
+  <!-- 3. 서브헤더 & 비주얼 -->
+  <header class="sub-hd">
+    <div class="sub-hero-contents wh">
+      <div class="sub-hero-title">YUHAN ESG</div>
+      <div class="sub-hero-txt-en">GREAT YUHAN, GLOBAL YUHAN</div>
+      <div class="sub-hero-txt-ko">인류의 행복한 내일을 위해</div>
+    </div>
+    <nav id="yh-lnb">
+      <h3 class="blind">LNB 서브메뉴</h3>
+      <ol class="yh-lnb-list wh">
+        <li><a href="./environment.html" class="yh-lnb-btn yh-lnb-env">환경경영</a></li>
+        <li><a href="./social.html" class="yh-lnb-btn yh-lnb-soc">사회공헌</a></li>
+        <li><a href="#" class="yh-lnb-btn yh-lnb-gov">윤리경영</a></li>
+      </ol>
+    </nav>
+  </header>
+
   <!-- 메인 -->
-  <main class="yh-main">
-    <section class="main-sec-hero wrap">
-      <h2 class="blind">히어로 영역</h2>
-      <div class="main-hero-container">
-        <video src="./images/y_heroVideo.mp4" class="main-hero-video" autoplay muted loop playsinline></video>
-        <div class="main-hero-txt">
-          <span>Excellence</span>
-          <span>Compliance</span>
-          <span>Contribution</span>
-        </div>
-        <div class="main-hero-txt2">
-          <span>True Hearts for Life</span>
-          <span>YUHAN</span>
+  <main id="yh-esg">
+    <section class="main-sec main-sec-ethics wrap-sub">
+      <h2 class="blind">유한 윤리헌장</h2>
+      <div class="main-container ethics-container">
+        <div class="main-title">유한 윤리헌장</div>
+        <p class="main-txt">유한양행과 종속회사는 우수한 제품과 공정하고 투명한 경영을 통해 인류의 건강과 행복 증진에 기여하고 있습니다.<br><br>이에, 올바른 업무 수행 및 윤리적 가치판단의 기준을 보다 명확하게 하기 위해 이 헌장을 제정하고, 이를 적극 실천할 것을 다짐합니다.</p>
+        <ol class="govern-card ethics-card">
+          <li>1. 우리는 제반 법령과 규정을 준수하고, 높은 윤리적 가치관을 바탕으로 청렴하고 정직하게 업무를 수행합니다.</li>
+          <li>2. 우리는 인류의 건강과 행복, 삶의 질 향상을 위해 안전하고 우수한 제품과 서비스를 제공합니다.</li>
+          <li>3. 우리는 시장경제 질서에 따라 공정하게 경쟁하고, 모든 이해관계자와 공동의 발전을 추구합니다.</li>
+          <li>4. 우리는 더 나은 미래를 위해 사회적 책임과  역할을 성실하게 수행합니다.</li>
+        </ol>
+        <p class="main-txt">‘유한 윤리헌장’은 유한양행과 종속회사에 적용되며, 각 사는 이를 저촉하지 않는 범위 내에서 별도의 윤리규범을 제정할 수 있습니다.</p>
+      </div>
+    </section>
+    <section class="main-sec main-sec-conduct wrap-sub">
+      <h2 class="blind">유한 윤리규범</h2>
+      <div class="main-container conduct-container">
+        <div class="main-title">유한 윤리규범</div>
+        <p class="main-txt">우리는 창업이념을 충실히 구현하기 위하여, 진취적이고 윤리적인 기업문화를 창조하는 데 끊임없이 노력해 나갈 것을 다짐합니다. 이에 다음과 같은 윤리강령을 적극적으로 실천할 것을 결의합니다.</p>
+        <div class="conduct-card">
+          <div class="conduct-card-title">윤리강령</div>
+          <span></span>
+          <ul class="conduct-card main-txt">
+              <li>우리는 기업의 사명과 목적이 고객가치 창조라는 분명한 신념을 가지고, 항상 고객의 입장에서 생각하고 행동합니다.</li>
+              <li>우리는 건전하고 투명한 경영활동을 통해 주주를 보호하고, 기업가치를 극대화하여 주주에게 장기적이고 안정적인 이익을 제공합니다.</li>
+              <li>우리는 협력 업체와의 거래에 있어서 시장경쟁 원칙을 준수하고, 깨끗하고 투명한 거래를 통한 상호 신뢰를 확보하여 장기적으로 공존 및 공동 발전을 추구합니다.</li>
+              <li>우리는 기업활동에 있어서 제반 법규 및 사회윤리를 준수하고, 선의의 경쟁을 실천하며, 새로운 아이디어를 바탕으로 제품과 서비스의 수준을 높여 경쟁우위를 확보합니다.</li>
+              <li>우리는 기술개발과 경영혁신을 통해 영속기업으로 국가 경제발전에 이바지하며, 환경친화적인 경영활동과 기업이윤의 사회 환원을 통해 기업의 사회적 책임을 다합니다.</li>
+              <li>우리는 정직과 성실을 근간으로 개인의 품위와 회사의 명예를 높이며, 영업비밀을 유출하거나 오용하지 않습니다.</li>
+              <li>우리는 회사가 추구하는 목표와 가치를 달성하기 위하여 윤리적 기반 위에 직무를 성실히 수행하고 직원 상호 간 존중하며, 자기 계발을 통해 각자 직무에서 최고가 되도록 노력합니다.</li>
+          </ul>
         </div>
       </div>
     </section>
-    <section class="main-sec-story">
-      <h2 class="blind">스토리</h2>
-      <div class="main-story-container wrap">
-        <div class="main-story-txt-wrap">
-          <div class="main-story-name">
-            <span>YUHAN</span><br>
-            <span><strong>STORY</strong></span>
-          </div>
-          <div class="main-story-txt-mo">
-            <span>유한양행은 정직한 마음으로<br>국민 건강의 역사를 써 내려갑니다. </span>
-          </div>
-          <div class="main-story-txt-pc">
-            <span>"정직한 마음으로 국민 건강의 역사를 써 내려온 유한양행은 이제 한국을 넘어<br><span>글로벌 제약 시장</span>의 혁신을 선도하고자 합니다.
-              <br>인류의 내일을 더 밝게 만드는 신약 개발과 <span>생명 존중의 가치</span>를<br>
-              실현하며, 전 세계인의 건강한 미래를 위한 새로운 기준을 만들어 가겠습니다."</span>
-          </div>
-        </div>
-        <img src="./images/visual_04.jpg" alt="스토리 이미지">
+    <section class="main-sec main-sec-cp wrap-sub">
+      <h2 class="blind">공정거래자율준수프로그램</h2>
+      <div class="main-container cp-container">
+        <div class="main-title">공정거래자율준수프로그램</div>
+        <p class="main-txt">유한양행은 2007년 공정거래자율준수프로그램(CP)을 도입해 준법경영시스템을 구축했습니다.<br>창업이념을 바탕으로 기업 가치를 창출하며 전 임직원은 CP를 적극 준수하여 투명하고 공정한 경영을 실천하고 있습니다.<br><br><span>CP프로세스</span><br>CP(Compliance Program)란 기업이 공정거래 관련 법규를 준수하기 위해서 자체적으로 제정·운영하는 내부준법시스템 및 행동 규범으로 아래와 같은 프로세스를 통해 운영되고 있습니다.</p>
+        <img src="./images/y_governance/y_cpProcessD.jpg" alt="공정거래자율준수 프로그램">
       </div>
     </section>
-    <section class="main-sec main-sec-company">
-      <h2 class="blind">유한연혁</h2>
-      <div class="main-company-container wrap">
-        <div class="main-company-wrap-mo">
-          <div class="company-name-mo"><span>YUHAN</span></div>
-          <div class="company-txt-mo"><span>유한양행은 창업이래 지금까지<br> 신뢰와 정직의 기업문화를 가지고<br> 우수한 의약품 생산과 국민보건 향상에<br>
-              매진해왔습니다.<br> 우리는 국내 1등을 넘어 글로벌 제약사로의 길,<br> 인류 건강을 위한 그 길을 위해<br> 큰 꿈을 갖고 걸어가려 합니다.</span></div>
-          <div class="company-t-group">
-            <div class="company-vision-mo">
-              <div class="vision-name-mo cp-title-mo"><span>MISSION & VISION</span></div>
-              <div class="vision-txt-mo cp-txt-mo"><span>유한양행은 환자 중심의 글로벌 선도<br>제약연구소로 도약하고자 노력합니다.</span></div>
-            </div>
-            <div class="company-ceo-mo">
-              <div class="ceo-name-mo cp-title-mo"><span>유일한 박사</span></div>
-              <div class="ceo-txt-mo cp-txt-mo"><span>국민의 건강이 곧 나라의 힘이라는<br>믿음으로 걷습니다.</span></div>
-            </div>
-            <div class="company-news-mo">
-              <div class="news-name-mo cp-title-mo"><span>NEWS ROOM</span></div>
-              <div class="news-txt-mo cp-txt-mo"><span>유한양행의 혁신적인 R&D 성과와<br>생명 존중을 향한 새로운 소식을 만나보세요.</span></div>
-            </div>
-          </div>
-        </div>
-        <div class="main-company-wrap-pc">
-          <div class="company-name-pc"><span>YUHAN</span></div>
-          <div class="company-txt-pc"><span>유한양행은 창업이래 지금까지 신뢰와 정직의 기업문화를 가지고<br> 우수한 의약품 생산과 국민보건 향상에 매진해왔습니다.<br> 우리는
-              국내 1등을 넘어 글로벌 제약사로의 길, 인류 건강을 위한 그 길을 위해 큰 꿈을 갖고 걸어가려 합니다.</span></div>
-          <div class="company-box-pc">
-            <div class="company-vision-pc">
-              <div class="cp-vision-ts">
-                <div class="cp-txt-group">
-                  <div class="vision-name-pc cp-title-pc"><span>MISSION & VISION</span></div>
-                  <div class="vision-subname cp-sub-pc"><span>인류의 건강을 위한 끊임없는 도전과 혁신</span></div>
-                </div>
-              </div>
-              <div class="vision-txt-pc cp-txt-pc"><span>유한양행은 '가장 좋은 상품의 생산, 성실한 납세,<br>기업 이윤의 사회 환원'이라는 창업 정신을
-                  계승합니다.<br>우리는 환자 중심의 글로벌 선도 제약 연구소로 도약하기 위해 <br>R&D 역량을 집중하며, 인류의 내일을 더 건강하게 만드는 <br>혁신적인 신약 개발에 앞장서고
-                  있습니다.</span></div>
-            </div>
-            <div class="company-ceo-pc">
-              <div class="cp-ceo-ts">
-                <div class="cp-txt-group">
-                  <div class="ceo-name-pc cp-title-pc"><span>유일한 박사</span></div>
-                  <div class="ceo-subname cp-sub-pc"><span>국가와 동포를 사랑한 선구자, 그 숭고한 발자취</span></div>
-                </div>
-              </div>
-              <div class="ceo-txt-pc cp-txt-pc"><span>"기업에서 얻은 이익은 그 기업을 키워준 사회에 환원해야 한다"는<br> 유일한 박사의 신념은 유한양행의
-                  뿌리입니다.<br>국민의 건강이 곧 나라의 힘이라는 믿음으로 걸어온 정직한 길을 이어받아,<br>우리는 오늘도 사회적 책임을 다하는 투명한 경영을 실천하고 있습니다.</span>
-              </div>
-            </div>
-            <div class="company-news-pc">
-              <div class="cp-news-ts">
-                <div class="cp-txt-group">
-                  <div class="news-name-pc cp-title-pc"><span>NEWS ROOM</span></div>
-                  <div class="news-sub-name cp-sub-pc"><span>유한양행이 전하는 혁신과 상생의 새로운 소식 </span></div>
-                </div>
-              </div>
-              <div class="news-txt-pc cp-txt-pc"><span>세계 시장을 향한 유한양행의 최신 R&D 성과부터 <br>지역사회와 함께하는 따뜻한 나눔 활동까지, <br>생명
-                  존중을 향한 우리의 생생한 발걸음을 만나보세요. <br>끊임없이 변화하고 성장하는 유한양행의 전문적인 뉴스들이 <br>실시간으로 업데이트됩니다.</span></div>
-            </div>
-          </div>
-        </div>
+    <section class="main-sec main-sec-compliance wrap-sub">
+      <h2 class="blind">부패방지 및 준법경영시스템</h2>
+      <div class="main-container compliance-container">
+        <div class="main-title">부패방지 및 준법경영시스템</div>
+        <p class="main-txt">ISO 37001과 ISO 37301은 국제표준화기구(ISO, International Organization for Standard)가 제정한 부패방지 및 준법경영 관련 표준입니다.<br>법률을 기반으로 부패 및 컴플라이언스 리스크를 사전에 식별하고 관리하는 체계를 제공하고 모든 조직에 적용 가능하도록 설계되어 부패 방지와 법적 의무 준수를 지원합니다.</p>
+        <img src="./images/y_governance/y_certifyD_img.jpg" alt="부패방지 및 준법경영시스템">
+        <p class="main-txt"><span>인증</span><br>유한양행은 부패방지문화 확산과 지속가능한 경영을 위해 2018년 3월 부패방지경영시스템(ISO 37001) 인증을 획득했습니다. 이어 2022년 6월 준법경영시스템(ISO 37301) 인증을 추가로 취득하며 준법경영 체계를 더욱 강화했습니다. 이를 통해 법적 의무 준수와 리스크 관리 역량을 인정받아 대내외 신뢰도를 높였습니다.</p>
       </div>
     </section>
-    <section class="main-sec main-sec-product">
-      <h2 class="blind">제품</h2>
-      <div class="main-product-wrap wrap">
-        <div class="product-hd-txt">
-          <div class="product-name"><span>PRODUCT</span></div>
-          <div class="product-txt"><span>우리는 타협하지 않는 품질 원칙으로<br> 국민의 건강한 삶을 위한 솔루션을 제공하겠습니다.<br> 세대를 넘어 사랑받아온 제품들로<br>
-              당신의 일상에 기분 좋은 활력을 더합니다.</span></div>
+    <section class="main-sec main-sec-council wrap-sub">
+      <h2 class="blind">이사회</h2>
+      <div class="main-container council-container">
+        <div class="title-wrap">
+          <div class="main-title">이사회</div>
+          <span class="table-date main-txt">(2025년 3월 20일 현재)</span>
         </div>
-        <div class="product-box-wrap swiper">
-          <div class="swiper-wrapper">
-            <div class="product-box swiper-slide">
-              <div class="product-box-txt1 box-txt">
-                <span>삐콤·씨</span>
-                <span>지친 현대인에게 활력을 불어넣는 비타민의 대명사</span>
-              </div>
-              <div class="product-img">
-                <img src="./images/y_product/product_01.png" alt="제품 삐콤씨">
-              </div>
-            </div>
-            <div class="product-box swiper-slide">
-              <div class="product-box-txt2 box-txt">
-                <span>안티푸라민</span>
-                <span>90년 넘게 국민의 아픔을 달래온 유한의 역사</span>
-              </div>
-              <div class="product-img">
-                <img src="./images/y_product/product_03.png" alt="제품 안티푸라민">
-              </div>
-            </div>
-            <div class="product-box swiper-slide">
-              <div class="product-box-txt3 box-txt">
-                <span>렉라자</span>
-                <span>글로벌 시장을 뒤흔든 유한의 혁신 신약</span>
-              </div>
-              <div class="product-img">
-                <img src="./images/y_product/n_product_02.png" alt="제품 렉라자">
-              </div>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </section>
-    <section class="main-sec main-sec-official">
-      <h2 class="blind">유튜브</h2>
-      <div class="main-official-wrap wrap">
-        <div class="official-hd-txt">
-          <div class="official-name"><span>YUHAN OFFICIAL</span></div>
-          <div class="official-txt"><span>우리가 걷는 인류 건강의 길, 그 뜨거운 연구의<br> 기록들을 영상에 담았습니다.<br> 1등 제약사를 넘어 글로벌 혁신으로
-              나아가는<br> 유한양행의 가장 가까운 모습들.<br> 텍스트 너머의 생동감 넘치는 비전을<br> 공식 채널에서 지금 바로 만나보세요.</span></div>
-        </div>
-        <div class="official-prodyoutbe">
-          <div class="official-prod">
-            <div class="prod-txt">
-              <span>Classic Never Fades</span>
-              <span>100년의 시간을 넘어,<br> 당신의 일상 곁을 지켜온 가장 가까운 손길.</span>
-            </div>
-            <div class="prod-img">
-              <img src="./images/y_youtube/anti.png" alt="안티푸라민 제품">
-            </div>
-          </div>
-          <div class="official-youtube">
-            <iframe src="https://www.youtube.com/embed/Rrova_2YAU4?autoplay=0&mute=0" frameborder="0"
-              class="youtube-movie"></iframe>
-          </div>
+        <div class="table-wrap">
+          <table class="council-table">
+            <thead>
+              <tr>
+                <th>성명</th>
+                <th>선임일</th>
+                <th>임기</th>
+                <th>구분</th>
+                <th>비고</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>조욱제</td>
+                <td>2024.03.15</td>
+                <td>3년</td>
+                <td>사내이사</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>김열홍</td>
+                <td>2024.03.15</td>
+                <td>3년</td>
+                <td>사내이사</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>이정희</td>
+                <td>2024.03.15</td>
+                <td>3년</td>
+                <td>기타비상무이사</td>
+                <td>이사회 의장</td>
+              </tr>
+              <tr>
+                <td>지성길</td>
+                <td>2023.03.23</td>
+                <td>3년</td>
+                <td>사외이사</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>박동진</td>
+                <td>2023.03.23</td>
+                <td>3년</td>
+                <td>사외이사</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>김준철</td>
+                <td>2024.03.15</td>
+                <td>3년</td>
+                <td>사외이사</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>신영재</td>
+                <td>2024.03.15</td>
+                <td>3년</td>
+                <td>사외이사</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
-    <section class="main-sec-esg">
-      <h2 class="blind">ESG</h2>
-      <div class="main-esg-container wrap">
-        <div class="main-esg-txt-wrap">
-          <h3>Sustainability</h3>
-          <span>창업주 유일한 박사의 정신을 이어받아 정직한 기업 문화를 실천합니다.</span>
-        </div>
-        <div class="esg-card">
-          <a href="./environment.html" class="e-content">
-            <span class="esg-label">E</span>
-            <span class="esg-title">환경경영</span>
-            <span class="esg-desc">자연과 함께 숨 쉬는 내일을 만듭니다</span>
-          </a>
-          <a href="./social.html" class="s-content">
-            <span class="esg-label">S</span>
-            <span class="esg-title">사회공헌</span>
-            <span class="esg-desc">가장 좋은 상품으로 사회에 봉사합니다</span>
-          </a>
-          <a href="./governance.html"class="g-content">
-            <span class="esg-label">G</span>
-            <span class="esg-title">윤리경영</span>
-            <span class="esg-desc">가장 존경받는 기업, 그 이상의 가치를 지킵니다</span>
-          </a>
-        </div>
-      </div>
-    </section>
-    <section class="main-sec main-sec-brandsite">
-      <h2 class="blind">브랜드 사이트</h2>
-      <div class="main-brandsite-container wrap">
-        <div class="main-brandsite-txt-wrap">
-          <h3>BRAND SITE</h3>
-          <div class="main-brandsite-txt">
-            <span>기업의 성장이 곧 사회의 행복이 된다는 유한만의 철학은 세상 어디에도 없는 우리의 긍지입니다.<br>정직한 브랜드가 만드는 선한 영향력으로 대한민국이 가장 자랑스러워하는 기업으로
-              남겠습니다.</span>
-          </div>
-        </div>
-        <div class="brand-container">
-          <div class="brandsite-scroll-wrap brand-swiper">
-            <ul class="brand-list swiper-wrapper">
-              <li class="swiper-slide"><img src="./images/y_brandsite/brandsite-1.jpg" alt="유한락스"></li>
-              <li class="swiper-slide"><img src="./images/y_brandsite/brandsite-2.jpg" alt="웰니스"></li>
-              <li class="swiper-slide"><img src="./images/y_brandsite/brandsite-3.jpg" alt="암앤해머"></li>
-              <li class="swiper-slide"><img src="./images/y_brandsite/brandsite-4.jpg" alt="삐콤씨"></li>
-              <li class="swiper-slide"><img src="./images/y_brandsite/brandsite-5.jpg" alt="닥터버들"></li>
-              <li class="swiper-slide"><img src="./images/y_brandsite/brandsite-6.jpg" alt="워렌텍"></li>
-              <li class="swiper-slide"><img src="./images/y_brandsite/brandsite-7.jpg" alt="안티푸라민"></li>
-              <li class="swiper-slide"><img src="./images/y_brandsite/brandsite-8.jpg" alt="비타민씨"></li>
-              <li class="swiper-slide"><img src="./images/y_brandsite/brandsite-9.jpg" alt="세탁세제"></li>
-            </ul>
-          </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
+    <section class="main-sec main-sec-governance wrap-sub">
+      <h2 class="blind">거버넌스</h2>
+      <div class="main-container governance-container">
+        <div class="main-title">거버넌스</div>
+        
       </div>
     </section>
   </main>
@@ -439,14 +365,10 @@
       <div class="ft-end">
         <div class="ft-copy">COPYRIGHT &copy; 2026 YUHAN. ALL RIGHT RESERVED</div>
         <ul class="ft-sns">
-          <li class="ft-sns-kakaotalk"><a href="#"><i class="fa-brands fa-kakao-talk"><span
-                  class="blind">카카오톡</span></i></a></li>
-          <li class="ft-sns-facebook"><a href="#"><i class="fa-brands fa-facebook-f"><span
-                  class="blind">페이스북</span></i></a></li>
-          <li class="ft-sns-instagram"><a href="#"><i class="fa-brands fa-instagram"><span
-                  class="blind">인스타그램</span></i></a></li>
-          <li class="ft-sns-youtube"><a href="#"><i class="fa-brands fa-youtube"><span class="blind">유튜브</span></i></a>
-          </li>
+          <li class="ft-sns-kakaotalk"><a href="#"><i class="fa-brands fa-kakao-talk"><span class="blind">카카오톡</span></i></a></li>
+          <li class="ft-sns-facebook"><a href="#"><i class="fa-brands fa-facebook-f"><span class="blind">페이스북</span></i></a></li>
+          <li class="ft-sns-instagram"><a href="#"><i class="fa-brands fa-instagram"><span class="blind">인스타그램</span></i></a></li>
+          <li class="ft-sns-youtube"><a href="#"><i class="fa-brands fa-youtube"><span class="blind">유튜브</span></i></a></li>
         </ul>
       </div>
     </div>
@@ -559,14 +481,10 @@
             </div>
           </div>
           <ul class="ft-sns-mo">
-            <li class="ft-sns-kakaotalk"><a href="#"><i class="fa-brands fa-kakao-talk"><span
-                    class="blind">카카오톡</span></i></a></li>
-            <li class="ft-sns-facebook"><a href="#"><i class="fa-brands fa-facebook-f"><span
-                    class="blind">페이스북</span></i></a></li>
-            <li class="ft-sns-instagram"><a href="#"><i class="fa-brands fa-instagram"><span
-                    class="blind">인스타그램</span></i></a></li>
-            <li class="ft-sns-youtube"><a href="#"><i class="fa-brands fa-youtube"><span
-                    class="blind">유튜브</span></i></a></li>
+            <li class="ft-sns-kakaotalk"><a href="#"><i class="fa-brands fa-kakao-talk"><span class="blind">카카오톡</span></i></a></li>
+            <li class="ft-sns-facebook"><a href="#"><i class="fa-brands fa-facebook-f"><span class="blind">페이스북</span></i></a></li>
+            <li class="ft-sns-instagram"><a href="#"><i class="fa-brands fa-instagram"><span class="blind">인스타그램</span></i></a></li>
+            <li class="ft-sns-youtube"><a href="#"><i class="fa-brands fa-youtube"><span class="blind">유튜브</span></i></a></li>
             <li class="ft-sns-cs"><a href="#"><i class="fa-solid fa-phone"><span class="blind">고객센터</span></i></a></li>
           </ul>
           <div class="ft-copy-mo">&copy; 2026 YUHAN. ALL RIGHT RESERVED</div>
@@ -638,5 +556,4 @@
     </nav>
   </div>
 </body>
-
 </html>

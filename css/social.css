@@ -2,21 +2,22 @@
 /* 웹폰트 연결 */
 @import url('webfonts.css');
 @import url('var.css');
-.wrap-sub {
-  padding: 0 16px;
-}
 /* LNB */
 .yh-lnb-soc {
   text-shadow: none;
 }
 .yh-lnb-list li:nth-child(2) {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 .yh-lnb-list li:nth-child(2) a {
   color: var(--txt-color);
 }
 
 /* 메인 */
+.csrStr-container,
+.csrSys-container {
+  align-items: center;
+}
 .main-img-csrStr {
   height: 100%;
   max-width: 400px;
@@ -73,8 +74,8 @@
   position: relative;
   z-index: 1;
   color: #fff;
-  font-weight: 600;
-  line-height: 1.4;
+  font-size: 18px;
+  font-weight: 700;
   padding: 0 12px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }

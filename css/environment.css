@@ -6,9 +6,107 @@
   text-shadow: none;
 }
 .yh-lnb-list li:first-child {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 .yh-lnb-list li:first-child a {
   color: var(--txt-color);
   text-shadow: inherit;
 }
+.card-title {
+  font-weight: 700;
+}
+/* 메인 */
+.greenCompany-container {
+  align-items: center;
+}
+.main-img-greenCompany {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+.main-img-greenCompany img:first-child {
+  width: 30%;
+}
+.main-img-greenCompany img:last-child {
+  width: 70%;
+}
+.greenAct-container {
+  align-items: flex-start;
+}
+.greenAct-cards {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 30px;
+}
+.greenAct-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+  border-radius: 8px;
+  border: 1px solid rgb(0, 0, 0, 0.3);
+}
+.greenAct-card-img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+.greenAct-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.3);
+}
+.greenAct-card-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.greenAct-card .card-title {
+  padding: 0 16px;
+}
+.greenAct-card .main-txt {
+  padding: 0 16px 20px;
+}
+.report-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+}
+.report-card {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 20px);
+  max-width: 250px;
+}
+.report-card img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.report-card .card-title {
+  color: #929292;
+  padding-left: 16px;
+}
+.report-card .main-txt {
+  padding-left: 16px;
+}
+.esg-table {
+  min-width: 800px; /* 중요: 화면보다 크게 만들어야 스크롤 생김 */
+}
+/* .esg-table-wrap::after {
+  content: "← 좌우로 스크롤 →";
+  display: block;
+  text-align: right;
+  font-size: 12px;
+  color: #929292;
+  margin-top: 4px;
+} */
