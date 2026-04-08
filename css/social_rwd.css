@@ -17,6 +17,9 @@
   .safety-img {
     height: 200px;
   }
+  .safety-img .main-txt {
+    font-size: 22px;
+  }
 }
 
 /* 4. pc 1280px부터~ */

@@ -91,6 +91,7 @@
   }
   .mo-depth1 > a:after {
     content: '';
+    display: none;
   }
   .mo-depth2 {
     display: flex;
@@ -110,11 +111,8 @@
     opacity: 1;
     color: var(--main-color);
   }
-  .mo-depth1 .mo-depth2-re {
-    padding-top: 40px;
-  }
-  .yh-mo-gnb > .mo-depth1:last-child > a {
-    padding-bottom: 20px;
+  .yh-mo-gnb > .mo-depth1:last-child > a:hover {
+    color: var(--main-color);
   }
 }
 
@@ -201,8 +199,7 @@
     opacity: 1;
   }
   .yh-mo-gnb {
-    padding-top: 50px;
-    padding-left: 550px;
+    padding:75px 0 75px 550px;
   }
   .mo-depth1 {
     display: flex;
@@ -228,5 +225,11 @@
   .mo-depth1 > a:after {
     padding-left: 20px;
     font-size: 32px;
+  }
+  .yh-mo-gnb > .mo-depth1:last-child {
+    border: inherit;
+  }
+  .yh-mo-gnb > .mo-depth1:last-child:after {
+    display: none;
   }
 }

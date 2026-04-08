@@ -12,7 +12,7 @@
   gap: 100px;
 }
 .main-sec:first-child {
-  padding-top: 50px;
+  padding-top: 50px 0;
 }
 .main-sec:last-child {
   padding-bottom: 50px;
@@ -84,23 +84,11 @@
   text-shadow: inherit;
 }
 
-.main-sec-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 36px;
-  font-weight: 700;
-  color: var(--main-color);
-}
-
 /* 1. mo ~767px까지 */
 @media all and (max-width: 767px) {}
 
 /* 2. tb 768px부터~ */
 @media all and (min-width: 768px) {
-  .main-sec-title {
-    font-size: 45px;
-  }
   #yh-esg {
     gap: 96px;
   }
@@ -148,9 +136,6 @@
 
 /* 4. pc 1280px부터~ */
 @media all and (min-width: 1280px) {
-  .main-sec-title {
-    font-size: 64px;
-  }
   #yh-esg {
     gap: 192px;
   }
@@ -169,7 +154,7 @@
   }
   .main-txt {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 1.6;
   }
   .wrap-sub {
     padding: 0 250px;
