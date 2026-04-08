@@ -63,7 +63,10 @@ $(function () {
 
    // 모바일 메뉴 펼치기/접기
   $(smMainMenu).click(function(e) {
-    if(!$(body).hasClass("pc")){ 
+    if($(body).hasClass("mo")){ 
+      if ($(this).parent().is(":last-child")) {
+      return; // 여기서 함수 종료 (클릭 효과 무시)
+    }
       e.preventDefault();
       $(this).parent().siblings().find(smSubMenu).stop().slideUp(300);
       $(this).next().stop().slideToggle(300);
