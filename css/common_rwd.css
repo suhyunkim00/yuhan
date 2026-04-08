@@ -16,7 +16,7 @@
 /* 2. tb 768px부터~ */
 @media all and (min-width: 768px) {
   .yh-hd .wh-bg {
-    height: 70px;
+    height: 100%;
   }
   #yh-ft-pc {
     display: none;
