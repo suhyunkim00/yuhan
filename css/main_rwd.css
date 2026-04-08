@@ -63,10 +63,13 @@
     color: #000; 
     height: auto; 
     align-self: stretch;
-    padding: 0;
+    padding: 20px 20px 20px 0;
+  }
+  .main-story-txt-pc > span > br {
+    display: none;
   }
   .main-story-name {
-    font-size: 40px;
+    font-size: 60px;
     color: #000;
     text-shadow: inherit;
   }
@@ -102,12 +105,11 @@
     width: 640px;
   }
   .company-name-mo {
-    font-size: 40px;
+    font-size: 60px;
   }
 
-
   .product-name {
-    font-size: 40px;
+    font-size: 60px;
   }
   .product-txt {
     font-size: 16px;
@@ -159,7 +161,7 @@
     text-align: inherit;
   }
   .official-name {
-    font-size: 40px;
+    font-size: 60px;
   }
   .official-txt > span > br {
     display: none;
@@ -183,6 +185,9 @@
   }
   .prod-img > img{
     width: 350px;
+  }
+  .swiper-wrapper {
+    width: 93%;
   }
   /* esg */
   .main-sec-esg {
@@ -232,6 +237,9 @@
   .swiper-button-next {
     display: block;
   }
+  .main-brandsite-txt-wrap h3 {
+    font-size: 60px;
+  }
 }
 
 /* 3. pc 1280px부터~ */
@@ -273,12 +281,15 @@
   .main-story-txt-pc {
     font-size: 20px;
   }
+   .main-story-txt-pc > span > br {
+    display: block;
+   }
  
 
   .main-company-wrap-pc {}
   .company-name-pc {
     font-size: 90px;
-    font-weight: 600;
+    font-weight: 900;
     font-family: var(--main-en-font);
   }
   .company-txt-pc {
@@ -392,7 +403,7 @@
   }
   .official-name {
     font-size: 90px;
-    font-weight: 600;
+    font-weight: 900;
   }
   .official-txt {
     font-size: 20px;
@@ -472,7 +483,7 @@
   }
   .main-esg-txt-wrap h3 {
     font-size: 90px;
-    font-weight: 800;
+    font-weight: 900;
     margin: 0;
   }
   .main-esg-txt-wrap span {
@@ -540,7 +551,7 @@
   .main-brandsite-txt-wrap {}
   .main-brandsite-txt-wrap h3 {
     font-size: 90px;
-    font-weight: 800;
+    font-weight: 900;
   }
   .main-brandsite-txt {
     max-width: 800px;
@@ -565,9 +576,13 @@
     padding: 0;
     overflow: visible;
   }
-  .swiper-wrapper {
-    width: 95%;
+  .product-box-wrap .swiper-wrapper {
+    width: 97%;
     display: flex;
+    padding-left: 10px;
+  }
+  .brand-container .swiper-wrapper {
+    width: 100%;
   }
   .swiper-slide img {
     width: 100%;

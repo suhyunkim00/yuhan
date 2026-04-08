@@ -153,7 +153,7 @@
 
 .company-name-mo {
   font-size: 32px;
-  font-weight: 800;
+  font-weight: 900;
   font-family: var(--main-en-font);
   padding: 0 0 20px 0;
 }
@@ -315,7 +315,7 @@
 
 .official-name {
   font-size: 32px;
-  font-weight: 800;
+  font-weight: 900;
   font-family: var(--main-en-font);
   color: #000;
   padding-bottom: 10px;
@@ -379,7 +379,8 @@
 
 .main-esg-txt-wrap h3 {
   font-size: 32px;
-  font-weight: 800;
+  font-weight: 900;
+  font-family: var(--main-en-font);
 }
 
 .main-esg-txt-wrap span {
@@ -498,6 +499,7 @@
 .main-brandsite-txt-wrap h3 {
   font-size: 32px;
   font-weight: 900;
+  font-family: var(--main-en-font);
 }
 
 .main-brandsite-txt {
@@ -557,9 +559,8 @@
 
 .swiper-wrapper {
   display: flex;
-  width: 90%;
-  padding: 24px 16px;
-
+  width: 95%;
+  padding-top: 10px;
 }
 
 .swiper-slide {
