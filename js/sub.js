@@ -15,4 +15,25 @@ $(document).ready(function() {
       $icon.removeClass('fa-circle-minus').addClass('fa-circle-plus');
     }
   });
+
+  function changeImg() {
+    const body = $('body');
+    const img = $('.philosophy-img');
+
+    if (body.hasClass('pc')) {
+      img.attr('src', './images/y_info/기업이념.svg');
+    } else if (body.hasClass('tb')) {
+      img.attr('src', './images/y_info/기업이념_tb.svg');
+    } else {
+      img.attr('src', './images/y_info/기업이념_mo.svg');
+    }
+  }
+
+  // 최초 실행
+  changeImg();
+
+  // resize 시에도 실행 (body class 바뀌니까)
+  $(window).on('resize', function () {
+    changeImg();
+  });
 });

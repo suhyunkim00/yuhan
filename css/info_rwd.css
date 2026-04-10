@@ -1,0 +1,48 @@
+@charset 'UTF-8';
+@import url('var.css');
+
+/* 1. mo ~767px까지 */
+@media all and (max-width: 767px) {}
+
+/* 2. tb 768px부터~ */
+@media all and (min-width: 768px) {
+  .main-sec {
+    padding: 48px 96px;
+  }
+  .outline-table-wrap {
+    flex-direction: row;
+    align-items: center;
+  }
+  .outline-table-wrap img {
+    width: 20%;
+    min-width: 200px;
+  }
+  .philosophy-container:before {
+    /* background: url(../images/y_info/기업이념_tb.svg) center center / cover no-repeat; */
+  }
+  .msg-container,
+  .outline-container {
+    align-items: center;
+  }
+  .msg-wrap img{
+    width: 60%;
+  }
+}
+
+/* 4. pc 1280px부터~ */
+@media all and (min-width: 1280px) {
+  .main-sec {
+    padding: 96px 250px;
+  }
+  .outline-table-wrap {
+    width: 80%;
+  }
+  .outline-table-wrap img {
+    width: 20%;
+    min-width: 300px;
+  }
+  .msg-wrap {
+    flex-direction: row;
+    gap: 100px;
+  }
+}

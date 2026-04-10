@@ -6,13 +6,15 @@
 .wrap-sub {
   padding: 0 16px;
 }
-#yh-esg {
+#yh-esg,
+#yh-info,
+#yh-product {
   display: flex;
   flex-direction: column;
   gap: 100px;
 }
 .main-sec:first-child {
-  padding-top: 50px 0;
+  padding-top: 50px;
 }
 .main-sec:last-child {
   padding-bottom: 50px;
@@ -24,7 +26,7 @@
   gap: 30px;
 }
 .main-title {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   width: 100%;
 }
@@ -35,18 +37,38 @@
 
 
 /* LNB */
-.sub-hd {
-  background: url(../images/y_esg/lnb_bg.jpg) center center / cover no-repeat;
+.sub-hd-esg,
+.sub-hd-info,
+.sub-hd-product {
   height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
 }
-.sub-hero-contents {
+.sub-hd-esg {
+  background: url(../images/y_esg/lnb_bg.jpg) center center / cover no-repeat;
+}
+.sub-hd-info {
+  background: url(../images/y_info/info_lnb_bg.svg) center center / cover no-repeat;
+}
+.sub-hd-product {
+  background: url(../images/y_info/기업이념\ 배경.jpg) center center / cover no-repeat;
+
+}
+.sub-hero-contents,
+.sub-hero-contents-product{
   position: absolute;
   bottom: calc(50% - 40px);
   left: calc(50% - 120px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.sub-hero-contents-info {
+  position: absolute;
+  bottom: calc(50% - 60px);
+  left: calc(50% - 140px);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -89,7 +111,9 @@
 
 /* 2. tb 768px부터~ */
 @media all and (min-width: 768px) {
-  #yh-esg {
+  #yh-esg,
+  #yh-info,
+  #yh-product {
     gap: 96px;
   }
   .main-sec:first-child {
@@ -116,6 +140,14 @@
     bottom: calc(50% - 60px);
     left: calc(50% - 160px);
   }
+  .sub-hero-contents-info {
+    bottom: calc(50% - 80px);
+    left: calc(50% - 250px);
+  }
+  .sub-hero-contents-product {
+    bottom: calc(50% - 60px);
+    left: calc(50% - 200px);
+  }
   .sub-hero-title {
     font-size: 48px;
     font-weight: 700;
@@ -136,7 +168,9 @@
 
 /* 4. pc 1280px부터~ */
 @media all and (min-width: 1280px) {
-  #yh-esg {
+  #yh-esg,
+  #yh-info,
+  #yh-product {
     gap: 192px;
   }
   .main-sec:first-child {
@@ -165,6 +199,14 @@
   .sub-hero-contents {
       bottom: calc(50% - 80px);
       left: calc(50% - 200px);
+  }
+  .sub-hero-contents-info {
+      bottom: calc(50% - 100px);
+      left: calc(50% - 370px);
+  }
+  .sub-hero-contents-product {
+      bottom: calc(50% - 80px);
+      left: calc(50% - 300px);
   }
   .sub-hero-title {
       font-size: 65px;
