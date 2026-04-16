@@ -479,7 +479,7 @@
     text-align: left; /* 왼쪽 정렬로 변경 */
     color: #000;      /* 두 번째 사진처럼 배경이 흰색이면 검정색으로 */
     margin-bottom: 50px; /* 제목과 카드 사이의 간격 */
-    padding-left: 92px;
+    padding-left: 192px;
   }
   .main-esg-txt-wrap h3 {
     font-size: 90px;

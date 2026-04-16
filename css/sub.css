@@ -8,7 +8,8 @@
 }
 #yh-esg,
 #yh-info,
-#yh-product {
+#yh-product,
+#yh-vision {
   display: flex;
   flex-direction: column;
   gap: 100px;
@@ -26,7 +27,7 @@
   gap: 30px;
 }
 .main-title {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 700;
   width: 100%;
 }
@@ -39,7 +40,8 @@
 /* LNB */
 .sub-hd-esg,
 .sub-hd-info,
-.sub-hd-product {
+.sub-hd-product,
+.sub-hd-vision {
   height: 70vh;
   display: flex;
   flex-direction: column;
@@ -53,11 +55,14 @@
   background: url(../images/y_info/info_lnb_bg.svg) center center / cover no-repeat;
 }
 .sub-hd-product {
-  background: url(../images/y_info/기업이념\ 배경.jpg) center center / cover no-repeat;
-
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/y_product/3d-coronavirus-vaccine.jpg) center center / cover no-repeat;
+}
+.sub-hd-vision {
+  background: url(../images/y_vision/vision_hero_img.jpg) center center / cover no-repeat;
 }
 .sub-hero-contents,
-.sub-hero-contents-product{
+.sub-hero-contents-product,
+.sub-hero-contents-vision {
   position: absolute;
   bottom: calc(50% - 40px);
   left: calc(50% - 120px);
@@ -113,7 +118,8 @@
 @media all and (min-width: 768px) {
   #yh-esg,
   #yh-info,
-  #yh-product {
+  #yh-product,
+  #yh-vision {
     gap: 96px;
   }
   .main-sec:first-child {
@@ -136,7 +142,8 @@
     font-size: 18px;
     line-height: 22px;
   }
-  .sub-hero-contents {
+  .sub-hero-contents,
+    .sub-hero-contents-vision {
     bottom: calc(50% - 60px);
     left: calc(50% - 160px);
   }
@@ -170,7 +177,8 @@
 @media all and (min-width: 1280px) {
   #yh-esg,
   #yh-info,
-  #yh-product {
+  #yh-product,
+  #yh-vision {
     gap: 192px;
   }
   .main-sec:first-child {
@@ -202,11 +210,16 @@
   }
   .sub-hero-contents-info {
       bottom: calc(50% - 100px);
-      left: calc(50% - 370px);
+      left: calc(50% - 300px);
   }
   .sub-hero-contents-product {
       bottom: calc(50% - 80px);
       left: calc(50% - 300px);
+      
+  }
+  .sub-hero-contents-vision {
+      bottom: calc(50% - 100px);
+      left: calc(50% - 250px);
   }
   .sub-hero-title {
       font-size: 65px;

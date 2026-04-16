@@ -5,7 +5,101 @@
 @media all and (max-width: 767px) {}
 
 /* 2. tb 768px부터~ */
-@media all and (min-width: 768px) {}
+@media all and (min-width: 768px) {
+  .product-container {
+    align-items: flex-start;
+    gap: 60px;
+  }
+  .product-title-wrapper{
+    display: flex;
+  }
+  .product-swiper {
+    overflow: visible;
+    max-width: 100%;
+  }
+  .product-swiper .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    transform: none;
+    width: 100%;
+    gap: 20px;
+  }
+  .product-swiper .swiper-slide {
+    width: calc((100% - 40px) / 3);
+    margin-right: 0;
+    height: auto;
+    flex-shrink: 0;
+  }
+  .product-card {
+    gap: 18px;
+  }
+  .product-img img{
+    max-width: 700px;
+  }
+  .product-title {
+    display: none;
+  }
+  .product-name {
+    font-size: 18px;
+  }
+  .product-info .main-txt {
+    font-size: 16px;
+  }
+
+  .product-etc,
+  .product-otc,
+  .product-quasi,
+  .product-health {
+    display: none;
+  }
+
+  .product-etc.is-show,
+  .product-otc.is-show,
+  .product-quasi.is-show,
+  .product-health.is-show {
+    display: block;
+  }
+  .product-tab {
+    display: flex;
+    font-size: 22px;
+  }
+  .product-tab button {
+    font-weight: 600;
+    padding: 0 16px;
+    border-right: 2px solid var(--txt-color);
+  }
+  .product-tab button:last-child {
+    border: 0;
+  }
+  .product-tab button.is-active {
+    color: var(--main-color);
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  .product-tab button:hover {
+    color: var(--main-color);
+    text-decoration: underline;
+  }
+}
 
 /* 4. pc 1280px부터~ */
-@media all and (min-width: 1280px) {}
+@media all and (min-width: 1280px) {
+  .product-swiper .swiper-wrapper {
+    gap: 40px;
+  }
+  .product-swiper .swiper-slide {
+    width: calc((100% - 80px) / 3);
+  }
+  .product-img img {
+    max-width: 500px;
+  }
+  .product-tab {
+    font-size: 26px;
+  }
+  .product-name {
+    font-size: 22px;
+  }
+  .product-info .main-txt {
+    font-size: 20px;
+  }
+}
