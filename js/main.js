@@ -1,4 +1,5 @@
 $(function () {
+  const body = $('body');
   // Swiper 초기화
   const brandSwiper = new Swiper('.brand-swiper', {
     slidesPerView: 2,
@@ -51,12 +52,40 @@ $(function () {
     }
   }
 
+  let currentVideoType = '';
+
+  function changeVideo() {
+    const heroVideo = $('.main-hero-video');
+    let newType = '';
+    let newSrc = '';
+
+    if (body.hasClass('mo')) {
+      newType = 'mo';
+      newSrc = './images/y_heroVideo_mo.mp4';
+    } else {
+      newType = 'desktop';
+      newSrc = './images/y_heroVideo.mp4';
+    }
+
+    // 같은 상태면 변경 안 함
+    if (currentVideoType === newType) return;
+
+    currentVideoType = newType;
+    heroVideo.attr('src', newSrc);
+
+    const videoEl = heroVideo.get(0);
+    videoEl.load();
+    videoEl.play().catch(function(){});
+  }
+
   // 페이지 로드 시 실행
   initSwiper();
+  changeVideo();
 
   // 화면 크기가 변할 때마다 실행 (리사이즈 대응)
   window.addEventListener('resize', function () {
     initSwiper();
+    changeVideo();
   });
-
+  
 });
