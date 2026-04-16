@@ -1,0 +1,53 @@
+@charset 'UTF-8';
+@import url('var.css');
+
+/* 1. mo ~767px까지 */
+@media all and (max-width: 767px) {}
+
+/* 2. tb 768px부터~ */
+@media all and (min-width: 768px) {
+  .main-img-csrStr,
+  .main-img-csrSys {
+    width: 90%;
+    max-width: 900px;
+  }
+  .safeSys-card-imgs {
+    gap: 20px;
+  }
+  .safety-img {
+    height: 200px;
+  }
+  .safety-img .main-txt {
+    font-size: 22px;
+  }
+}
+
+/* 4. pc 1280px부터~ */
+@media all and (min-width: 1280px) {
+  .main-img-csrStr,
+  .main-img-csrSys {
+    width: 70%;
+    max-width: 900px;
+  }
+  .main-card-awards { 
+    width:50%;
+  }
+  .safeSys-card-imgs {
+    gap: 40px;
+  }
+  .safety-imgs {
+    gap: 20px;
+    width: 100%;
+  }
+  .safety-img {
+    width: calc(25% - 15px);
+    /* height: 220px; */
+  }
+  .safety-img:hover::before {
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: none;
+  }
+  .safety-img:hover .main-txt {
+    opacity: 0;
+  }
+}

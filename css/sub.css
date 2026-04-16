@@ -1,0 +1,240 @@
+@charset 'utf-8';
+/* 웹폰트 연결 */
+@import url('webfonts.css');
+@import url('var.css');
+/* 공용 */
+.wrap-sub {
+  padding: 0 16px;
+}
+#yh-esg,
+#yh-info,
+#yh-product,
+#yh-vision {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.main-sec:first-child {
+  padding-top: 50px;
+}
+.main-sec:last-child {
+  padding-bottom: 50px;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+.main-title {
+  font-size: 24px;
+  font-weight: 700;
+  width: 100%;
+}
+.main-txt {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+
+/* LNB */
+.sub-hd-esg,
+.sub-hd-info,
+.sub-hd-product,
+.sub-hd-vision {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+}
+.sub-hd-esg {
+  background: url(../images/y_esg/lnb_bg.jpg) center center / cover no-repeat;
+}
+.sub-hd-info {
+  background: url(../images/y_info/info_lnb_bg.svg) center center / cover no-repeat;
+}
+.sub-hd-product {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/y_product/3d-coronavirus-vaccine.jpg) center center / cover no-repeat;
+}
+.sub-hd-vision {
+  background: url(../images/y_vision/vision_hero_img.jpg) center center / cover no-repeat;
+}
+.sub-hero-contents,
+.sub-hero-contents-product,
+.sub-hero-contents-vision {
+  position: absolute;
+  bottom: calc(50% - 40px);
+  left: calc(50% - 120px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.sub-hero-contents-info {
+  position: absolute;
+  bottom: calc(50% - 60px);
+  left: calc(50% - 140px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.sub-hero-title {
+  font-size: 26px;
+  font-weight: 700;
+  font-family: var(--main-en-font);
+}
+.sub-hero-txt-en {
+  font-size: 16px;
+  font-family: var(--main-en-font);
+}
+.sub-hero-txt-ko {
+  font-size: 14px;
+}
+.yh-lnb-list {
+  display: flex;
+  width: 100%;
+  height: 40px;
+}
+.yh-lnb-list a {
+  width: calc(100% / 3);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.yh-lnb-btn {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.yh-lnb-list a:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--txt-color);
+  text-shadow: inherit;
+}
+
+/* 1. mo ~767px까지 */
+@media all and (max-width: 767px) {}
+
+/* 2. tb 768px부터~ */
+@media all and (min-width: 768px) {
+  #yh-esg,
+  #yh-info,
+  #yh-product,
+  #yh-vision {
+    gap: 96px;
+  }
+  .main-sec:first-child {
+    padding-top: 48px;
+  }
+  .main-sec:last-child {
+    padding-bottom: 48px;
+  }
+  .main-container {
+    gap: 40px;
+  }
+  .wrap-sub {
+    padding: 0 96px;
+  }
+  .main-title {
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .main-txt {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .sub-hero-contents,
+    .sub-hero-contents-vision {
+    bottom: calc(50% - 60px);
+    left: calc(50% - 160px);
+  }
+  .sub-hero-contents-info {
+    bottom: calc(50% - 80px);
+    left: calc(50% - 250px);
+  }
+  .sub-hero-contents-product {
+    bottom: calc(50% - 60px);
+    left: calc(50% - 200px);
+  }
+  .sub-hero-title {
+    font-size: 48px;
+    font-weight: 700;
+  }
+  .sub-hero-txt-en {
+    font-size: 22px;
+  }
+  .sub-hero-txt-ko {
+    font-size: 20px;
+  }
+  .yh-lnb-list {
+    height: 50px;
+  }
+  .yh-lnb-btn {
+    font-size: 19px;
+  }
+}
+
+/* 4. pc 1280px부터~ */
+@media all and (min-width: 1280px) {
+  #yh-esg,
+  #yh-info,
+  #yh-product,
+  #yh-vision {
+    gap: 192px;
+  }
+  .main-sec:first-child {
+    padding-top: 96px;
+  }
+  .main-sec:last-child {
+    padding-bottom: 96px;
+  }
+  .main-container {
+    gap: 50px;
+  }
+  .main-title {
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .main-txt {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  .wrap-sub {
+    padding: 0 250px;
+  }
+  .sub-hd {
+    height: 80vh;
+  }
+  .sub-hero-contents {
+      bottom: calc(50% - 80px);
+      left: calc(50% - 200px);
+  }
+  .sub-hero-contents-info {
+      bottom: calc(50% - 100px);
+      left: calc(50% - 300px);
+  }
+  .sub-hero-contents-product {
+      bottom: calc(50% - 80px);
+      left: calc(50% - 300px);
+      
+  }
+  .sub-hero-contents-vision {
+      bottom: calc(50% - 100px);
+      left: calc(50% - 250px);
+  }
+  .sub-hero-title {
+      font-size: 65px;
+      font-weight: 700;
+  }
+  .sub-hero-txt-en {
+      font-size: 26px;
+  }
+  .sub-hero-txt-ko {
+      font-size: 24px;
+  }
+  .yh-lnb-list {
+      height: 60px;
+  }
+  .yh-lnb-btn {
+      font-size: 22px;
+  }
+}

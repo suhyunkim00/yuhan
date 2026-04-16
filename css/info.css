@@ -1,0 +1,82 @@
+@charset 'utf-8';
+/* 웹폰트 연결 */
+@import url('webfonts.css');
+@import url('var.css');
+#yh-info {
+  gap: inherit;
+}
+.yh-lnb-info {
+  text-shadow: none;
+}
+.yh-lnb-list a:first-child {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--txt-color);
+}
+.main-sec {
+  padding: 50px 16px;
+}
+/* 메인 */
+.outline-container span {
+  color: var(--main-color);
+  font-weight: 600;
+}
+.outline-table-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+th {
+  background-color: var(--sub-gray-color);
+}
+.outline-table-wrap img {
+  width: 100%;
+}
+.outline-table {
+  min-width: 800px; /* 중요: 화면보다 크게 만들어야 스크롤 생김 */
+}
+.outline-table tr:first-child td {
+  border-top: 1px solid rgba(130, 130, 130, 0.3);
+}
+.main-sec-philosophy {
+  position: relative;
+  z-index: 0;
+}
+.philosophy-container:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url(../images/y_info/기업이념\ 배경.jpg) center center / cover no-repeat;
+  opacity: 0.2;
+  z-index: -1;
+}
+.philosophy-container img {
+  width: 100%;
+}
+.msg-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  position: relative;
+  padding-bottom: 100px;
+}
+.msg-wrap img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
+}
+.msg-wrap span {
+  color: var(--main-color);
+  font-weight: 600;
+  font-size: 20px;
+  width: 100%;
+}
+.msg-name {
+  font-weight: 800;
+  font-size: 36px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

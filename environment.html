@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지속가능경영</title>
+    <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/common_rwd.css">
+    <link rel="stylesheet" href="./css/sub.css">
+    <link rel="stylesheet" href="./css/environment.css">
+    <link rel="stylesheet" href="./css/environment_rwd.css">
+    <link rel="icon" href="./images/favicon.svg" type="image/svg">
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src='./js/jquery-ui.min.js'></script>
+    <script src="./js/lenis.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/sub.js"></script>
+
+</head>
+<body>
+  <!-- 헤더 -->
+  <header class="yh-hd">
+    <div class="wh-bg"><span class="blind">헤더흰색배경</span></div>
+    <div class="wh-bg-gnb"><span class="blind">메뉴흰색배경</span></div>
+    <div class="yh-container wrap">
+      <h1 class="yh-logo"><a href="index.html"><span class="blind">유한양행</span></a></h1>
+      <h2 class="blind">주 메뉴</h2>
+      <nav id="yh-gnb">
+        <ol class="yh-gnb">
+          <li class="depth1">
+            <a href="./info.html">유한소개</a>
+            <div class="depth2-wrap">
+              <ul class="depth2">
+                <li><a href="./info.html">회사소개</a></li>
+                <li><a href="#">홍보</a></li>
+                <li><a href="#">창업자 유일한</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="depth1">
+            <a href="./vision.html">연구개발</a>
+            <div class="depth2-wrap">
+              <ul class="depth2">
+                <li><a href="./vision.html">미션 & 비전</a></li>
+                <li><a href="#">연구개발 활동</a></li>
+                <li><a href="#">파이프라인</a></li>
+                <li><a href="#">주요성과</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="depth1">
+            <a href="./environment.html">지속가능경영</a>
+            <div class="depth2-wrap">
+              <ul class="depth2">
+                <li><a href="./environment.html">환경경영</a></li>
+                <li><a href="./social.html">사회공헌</a></li>
+                <li><a href="./governance.html">윤리경영</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="depth1">
+            <a href="#">투자정보</a>
+            <div class="depth2-wrap">
+              <ul class="depth2">
+                <li><a href="#">공시·공고</a></li>
+                <li><a href="#">재무·주식정보</a></li>
+                <li><a href="#">IR 자료실</a></li>
+                <li><a href="#">ANNUAL REPORT</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="depth1">
+            <a href="./product.html">제품정보</a>
+            <div class="depth2-wrap">
+              <ul class="depth2">
+                <li><a href="./product.html">제품정보</a></li>
+                <li><a href="#">브랜드 이야기</a></li>
+                <li><a href="#">약국찾기</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="depth1">
+            <a href="#">인재채용</a>
+          </li>
+        </ol>
+      </nav>
+      <nav class="util-menu">
+        <h2 class="blind">유틸 메뉴</h2>
+        <div class="lang-wrap">
+          <button class="lang-btn"><span class="blind">언어선택</span></button>
+          <ul class="lang-list">
+            <li><a href="#">KOR</a></li>
+            <li><a href="#">ENG</a></li>
+          </ul>
+          <button class="sitemap-btn"><span class="blind">사이트맵</span></button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 3. 서브헤더 & 비주얼 -->
+  <header class="sub-hd-esg">
+    <div class="sub-hero-contents wh" data-aos="fade-up" data-aos-duration="1000">
+      <div class="sub-hero-title">YUHAN ESG</div>
+      <div class="sub-hero-txt-en">GREAT YUHAN, GLOBAL YUHAN</div>
+      <div class="sub-hero-txt-ko">인류의 행복한 내일을 위해</div>
+    </div>
+    <nav id="yh-lnb">
+      <h3 class="blind">LNB 서브메뉴</h3>
+      <div class="yh-lnb-list wh">
+        <a href="./environment.html" class="yh-lnb-btn yh-lnb-env">환경경영</a>
+        <a href="./social.html" class="yh-lnb-btn yh-lnb-soc">사회공헌</a>
+        <a href="./governance.html" class="yh-lnb-btn yh-lnb-gov">윤리경영</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 메인 -->
+  <main id="yh-esg">
+    <section class="main-sec main-sec-greenCompany wrap-sub">
+      <h2 class="blind">녹색기업</h2>
+      <div class="main-container greenCompany-container">
+        <div class="main-title">녹색기업</div>
+        <p class="main-txt main-txt-greenCompany">유한양행은 사업장의 환경오염물질 저감과 자원 및 에너지 절감을 통한 환경경영체제를 구축하여 2009년 환경부가 지정한 녹색기업으로 인증 받았습니다. 규제 중심적인 환경정책에서 벗어나 스스로 사업장의 환경성을 평가하고 개선계획을 실행하여 자율적인 환경경영체제를 구축하고 있습니다. 환경오염물질은 법 기준의 20% 이내로 배출농도를 관리하고 있으며, 방지 시설에 대한 철저한 관리 및 사전점검을 통해 환경리스크를 최소화하기 위해 노력하고 있습니다.아울러 녹색기업 간담회 및 환경 정책토론회 참여, 녹색기업 사랑의 연탄 나눔 봉사활동 등 다양한 기관과 지역사회의 녹색경영활동을 실천하고 있습니다.</p>
+        <div class="main-img-greenCompany">
+          <img src="./images/y_environment/greenImg_img1.jpg" alt="녹색기업 지정서">
+          <img src="./images/y_environment/y_envi0.jpg" alt="녹색기업 시상식">
+        </div>
+      </section>
+    <section class="main-sec main-sec-greenAct wrap-sub">
+      <h2 class="blind">녹색경영활동</h2>
+      <div class="main-container greenAct-container">
+        <div class="main-title">녹색경영활동</div>
+        <p class="main-txt ">유한양행은 임직원들이 자발적 온실가스 저감을 실천하고, 지역사회 저탄소 문화 장착을 위한 녹색경영활동을 지속적으로 수행하고 있습니다.</p>
+        <div class="greenAct-cards">
+          <div class="greenAct-card">
+            <div class="greenAct-card-img">
+              <img src="./images/y_environment/y_envi1.jpg" alt="2050 탄소중립, 1사 1숲 가꾸기" class="greenAct1">
+            </div>
+            <div class="greenAct-card-desc">
+              <div class="card-title">2050 탄소중립, 1사 1숲 가꾸기</div>
+              <div class="main-txt">금강유역환경청으로부터 제공받은 일정 규모의 매수토지에 나무를 식재하고 지속가능한 숲 가꾸기를 통해 미세먼지 저감 및 탄소중립 실현기반을 마련함.</div>
+            </div>
+          </div>
+          <div class="greenAct-card">
+            <div class="greenAct-card-img">
+              <img src="./images/y_environment/y_envi2.jpg" alt="미세먼지 고농도 계절 자발적 저감 협약" class="greenAct2">
+            </div>
+            <div class="greenAct-card-desc">
+              <div class="card-title">미세먼지 고농도 계절 자발적 저감 협약</div>
+              <div class="main-txt">미세먼지 농도가 높을 것으로 예상되는 12월~3월의 미세먼지 농도를 저감하기 위해 협약을 체결하고, 주변지역의 맑은 공기를 되찾기 위해 자발적인 저감노력을 지속적으로 실천함.</div>
+            </div>
+          </div>
+          <div class="greenAct-card">
+            <div class="greenAct-card-img">
+              <img src="./images/y_environment/y_envi3.jpg" alt="계룡산 국립공원 파크프렌즈 협약" class="greenAct3">
+            </div>
+            <div class="greenAct-card-desc">
+              <div class="card-title">계룡산 국립공원 파크프렌즈 협약</div>
+              <div class="main-txt">국립공원관리공단과 자연 ∙ 문화 자원의 보전 필요성을 공동으로 인식하고, 계룡산 국립공원의 자연환경 보전과 쾌적한 공원 환경 조성을 위한 협약을 체결.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <section class="main-sec main-sec-report wrap-sub">
+      <h2 class="blind">보고서</h2>
+      <div class="main-container report-container">
+        <div class="main-title">보고서</div>
+        <div class="report-cards">
+          <div class="report-card">
+            <img src="./images/y_environment/y_report1.png" alt="2024보고서">
+            <div class="card-title">2024 - 2025</div>
+            <div class="main-txt">지속가능경영 보고서</div>
+          </div>
+          <div class="report-card">
+            <img src="./images/y_environment/y_report2.png" alt="2023보고서">
+            <div class="card-title">2023 - 2024</div>
+            <div class="main-txt">지속가능경영 보고서</div>
+          </div>
+          <div class="report-card">
+            <img src="./images/y_environment/y_report3.png" alt="2022보고서">
+            <div class="card-title">2022 - 2023</div>
+            <div class="main-txt">지속가능경영 보고서</div>
+          </div>
+          <div class="report-card">
+            <img src="./images/y_environment/y_report4.png" alt="2021보고서">
+            <div class="card-title">2021 - 2022</div>
+            <div class="main-txt">지속가능경영 보고서</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-sec main-sec-grade wrap-sub">
+      <h2 class="blind">ESG 평가등급</h2>
+      <div class="main-container grade-container">
+        <div class="main-title">ESG 평가등급</div>
+        <div class="table-wrap esg-table-wrap">
+          <table class="esg-table">
+            <thead>
+              <tr>
+                <th>평가기관</th>
+                <th>시기</th>
+                <th colspan="4">평가결과</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- 서스틴베스트 -->
+              <tr>
+                <td>서스틴베스트</td>
+                <td>2025년 상반기</td>
+                <td class="grade">AA</td>
+                <td colspan="3">ESG Best Companies 4위(자산규모 2조 원 이상 그룹)</td>
+              </tr>
+              <!-- 한국 ESG기준원 -->
+              <tr>
+                <td rowspan="2">한국 ESG기준원</td>
+                <td rowspan="2">2024년</td>
+                <td>통합</td>
+                <td>환경</td>
+                <td>사회</td>
+                <td>지배구조</td>
+              </tr>
+              <tr>
+                <td class="grade">A</td>
+                <td class="grade">B+</td>
+                <td class="grade">A+</td>
+                <td class="grade">A</td>
+              </tr>
+              <!-- 한국 ESG연구소 -->
+              <tr>
+                <td rowspan="2">한국 ESG연구소</td>
+                <td rowspan="2">2024년 하반기</td>
+                <td>통합</td>
+                <td>환경</td>
+                <td>사회</td>
+                <td>지배구조</td>
+              </tr>
+              <tr>
+                <td class="grade">A</td>
+                <td class="grade">A+</td>
+                <td class="grade">A</td>
+                <td class="grade">B+</td>
+              </tr>
+              <!-- S&P Global -->
+              <tr>
+                <td>S&amp;P Global<br>(스탠다드앤푸어스 글로벌)</td>
+                <td>2024년</td>
+                <td colspan="4">DJSI(다우존스 지속가능경영지수) KOREA 2년 연속 편입</td>
+              </tr>
+              <!-- MSCI -->
+              <tr>
+                <td>MSCI<br>(모건스탠리캐피털인터내셔널)</td>
+                <td>2025년</td>
+                <td colspan="4" class="grade">AA</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- pc 푸터 -->
+  <footer id="yh-ft-pc" class="wh">
+    <div class="ft-container wrap">
+      <div class="ft-wrap">
+        <h2 class="blind">푸터</h2>
+        <div class="ft-company-wrap">
+          <div class="ft-logo"><span class="blind">로고</span></div>
+          <div class="ft-link">
+            <a href="#"><span>유한양행 버들장터</span></a>
+            <a href="#"><span>고객센터</span></a>
+            <a href="#"><span>인재채용</span></a>
+            <a href="#"><span>판매약국 찾기</span></a>
+          </div>
+          <nav class="ft-site-wrap">
+            <h2 class="blind">계열사</h2>
+            <button class="ft-site-btn">Family Site</button>
+            <ul class="ft-site-list">
+              <li>(주)유한화학</li>
+              <li>(주)유한메디카</li>
+              <li>(주)유한크로락스</li>
+              <li>(주)유칼릭스</li>
+              <li>(주)와이즈메디</li>
+              <li>(주)유한킴벌리</li>
+              <li>(주)한국얀센</li>
+              <li>(주)유한건강생활</li>
+              <li>(주)이뮨온시아</li>
+              <li>애드파마</li>
+              <li>워랜텍</li>
+            </ul>
+          </nav>
+          <div class="ft-info">
+            <dl class="ft-info-dl">
+              <dt class="blind">회사명</dt>
+              <dd class="blind">(주)유한양행</dd>
+              <dt>회사명</dt>
+              <dd>유한양행</dd>
+              <dt>사업자등록번호</dt>
+              <dd>118-81-00601</dd><br>
+              <dt>대표</dt>
+              <dd>조옥제</dd>
+              <dt>전화</dt>
+              <dd>02-828-0181</dd>
+              <dt>팩스</dt>
+              <dd>02-828-0050</dd><br>
+              <dt class="blind">주소</dt>
+              <dd>서울특별시 동작구 노량진로 74</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="ft-gnb">
+          <ol>
+            <li class="ft-depth1">
+              <a href="#">유한소개</a>
+              <ul class="ft-depth2">
+                <li><a href="./info.html">회사소개</a></li>
+                <li><a href="#">홍보</a></li>
+                <li><a href="#">창업자 유일한</a></li>
+              </ul>
+            </li>
+            <li class="ft-depth1">
+              <a href="#">연구개발</a>
+              <ul class="ft-depth2">
+                <li><a href="./vision.html">미션 & 비전</a></li>
+                <li><a href="#">연구개발 활동</a></li>
+                <li><a href="#">파이프라인</a></li>
+                <li><a href="#">주요성과</a></li>
+              </ul>
+            </li>
+            <li class="ft-depth1">
+              <a href="#">지속가능경영</a>
+              <ul class="ft-depth2">
+                <li><a href="./environment.html">환경경영</a></li>
+                <li><a href="./social.html">사회공헌</a></li>
+                <li><a href="./governance.html">윤리경영</a></li>
+              </ul>
+            </li>
+            <li class="ft-depth1">
+              <a href="#">투자정보</a>
+              <ul class="ft-depth2">
+                <li><a href="#">공시·공고</a></li>
+                <li><a href="#">재무·주식정보</a></li>
+                <li><a href="#">IR 자료실</a></li>
+                <li><a href="#">ANNUAL REPORT</a></li>
+              </ul>
+            </li>
+            <li class="ft-depth1">
+              <a href="#">제품정보</a>
+              <ul class="ft-depth2">
+                <li><a href="./product.html">제품정보</a></li>
+                <li><a href="#">브랜드 이야기</a></li>
+                <li><a href="#">약국찾기</a></li>
+              </ul>
+            </li>
+            <li class="ft-depth1">
+              <a href="#">인재채용</a>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="ft-end">
+        <div class="ft-copy">COPYRIGHT &copy; 2026 YUHAN. ALL RIGHT RESERVED</div>
+        <ul class="ft-sns">
+          <li class="ft-sns-kakaotalk"><a href="#"><i class="fa-brands fa-kakao-talk"><span class="blind">카카오톡</span></i></a></li>
+          <li class="ft-sns-facebook"><a href="#"><i class="fa-brands fa-facebook-f"><span class="blind">페이스북</span></i></a></li>
+          <li class="ft-sns-instagram"><a href="#"><i class="fa-brands fa-instagram"><span class="blind">인스타그램</span></i></a></li>
+          <li class="ft-sns-youtube"><a href="#"><i class="fa-brands fa-youtube"><span class="blind">유튜브</span></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- mo 푸터 -->
+  <footer id="yh-ft-mo" class="wh">
+    <div class="ft-container-mo">
+      <div class="ft-wrap-mo">
+        <h2 class="blind">푸터</h2>
+        <div class="ft-company-wrap-mo">
+          <div class="ft-box">
+            <div class="ft-box-left">
+              <div class="ft-logo-mo"><span class="blind">로고</span></div>
+              <div class="ft-info-mo">
+                <dl class="ft-info-dl-mo">
+                  <dt class="blind">회사명</dt>
+                  <dd class="ft-name">(주)유한양행</dd><br>
+                  <dt>회사명</dt>
+                  <dd>유한양행</dd>
+                  <dt>사업자등록번호</dt>
+                  <dd>118-81-00601</dd><br>
+                  <dt>대표</dt>
+                  <dd>조옥제</dd>
+                  <dt>전화</dt>
+                  <dd>02-828-0181</dd><br>
+                  <dt>팩스</dt>
+                  <dd>02-828-0050</dd>
+                  <dt class="blind">주소</dt>
+                  <dd>서울특별시 동작구 노량진로 74</dd>
+                </dl>
+              </div>
+              <nav class="ft-site-wrap-mo">
+                <h2 class="blind">계열사</h2>
+                <button class="ft-site-btn-mo">Family Site</button>
+                <ul class="ft-site-list-mo">
+                  <li>(주)유한화학</li>
+                  <li>(주)유한메디카</li>
+                  <li>(주)유한크로락스</li>
+                  <li>(주)유칼릭스</li>
+                  <li>(주)와이즈메디</li>
+                  <li>(주)유한킴벌리</li>
+                  <li>(주)한국얀센</li>
+                  <li>(주)유한건강생활</li>
+                  <li>(주)이뮨온시아</li>
+                  <li>애드파마</li>
+                  <li>워랜텍</li>
+                </ul>
+              </nav>
+            </div>
+            <div class="ft-box-right">
+              <div class="gnb-wrap">
+                <div class="ft-gnb-mo">
+                  <ol>
+                    <li class="ft-depth1-mo">
+                      <a href="#">유한소개</a>
+                      <ul class="ft-depth2-mo">
+                        <li><a href="./info.html">회사소개</a></li>
+                        <li><a href="#">홍보</a></li>
+                        <li><a href="#">창업자 유일한</a></li>
+                      </ul>
+                    </li>
+                    <li class="ft-depth1-mo">
+                      <a href="#">연구개발</a>
+                      <ul class="ft-depth2-mo">
+                        <li><a href="./vision.html">미션 & 비전</a></li>
+                        <li><a href="#">연구개발 활동</a></li>
+                        <li><a href="#">파이프라인</a></li>
+                        <li><a href="#">주요성과</a></li>
+                      </ul>
+                    </li>
+                    <li class="ft-depth1-mo">
+                      <a href="#">지속가능경영</a>
+                      <ul class="ft-depth2-mo">
+                        <li><a href="./environment.html">환경경영</a></li>
+                        <li><a href="./social.html">사회공헌</a></li>
+                        <li><a href="./governance.html">윤리경영</a></li>
+                      </ul>
+                    </li>
+                    <li class="ft-depth1-mo">
+                      <a href="#">투자정보</a>
+                      <ul class="ft-depth2-mo">
+                        <li><a href="#">공시·공고</a></li>
+                        <li><a href="#">재무·주식정보</a></li>
+                        <li><a href="#">IR 자료실</a></li>
+                        <li><a href="#">ANNUAL REPORT</a></li>
+                      </ul>
+                    </li>
+                    <li class="ft-depth1-mo">
+                      <a href="#">제품정보</a>
+                      <ul class="ft-depth2-mo">
+                        <li><a href="./product.html">제품정보</a></li>
+                        <li><a href="#">브랜드 이야기</a></li>
+                        <li><a href="#">약국찾기</a></li>
+                      </ul>
+                    </li>
+                    <li class="ft-depth1-mo">
+                      <a href="#">인재채용</a>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="ft-sns-mo">
+            <li class="ft-sns-kakaotalk"><a href="#"><i class="fa-brands fa-kakao-talk"><span class="blind">카카오톡</span></i></a></li>
+            <li class="ft-sns-facebook"><a href="#"><i class="fa-brands fa-facebook-f"><span class="blind">페이스북</span></i></a></li>
+            <li class="ft-sns-instagram"><a href="#"><i class="fa-brands fa-instagram"><span class="blind">인스타그램</span></i></a></li>
+            <li class="ft-sns-youtube"><a href="#"><i class="fa-brands fa-youtube"><span class="blind">유튜브</span></i></a></li>
+            <li class="ft-sns-cs"><a href="#"><i class="fa-solid fa-phone"><span class="blind">고객센터</span></i></a></li>
+          </ul>
+          <div class="ft-copy-mo">&copy; 2026 YUHAN. ALL RIGHT RESERVED</div>
+        </div>
+      </div>
+  </footer>
+
+  <!-- 사이트맵 -->
+  <div class="mo-gnb-sitemap bk">
+    <div class="mo-gnb-top">
+      <a href="index.html" class="mo-gnb-logo"><span class="blind">처음으로</span></a>
+      <button class="btn-close"><span class="blind">닫기</span></button>
+    </div>
+    <nav id="yh-mo-gnb">
+      <ol class="yh-mo-gnb">
+        <li class="mo-depth1">
+          <a href="#">유한소개</a>
+          <ul class="mo-depth2">
+            <li><a href="./info.html">회사소개</a></li>
+            <li><a href="#">홍보</a></li>
+            <li><a href="#">창업자 유일한</a></li>
+          </ul>
+        </li>
+        <li class="mo-depth1">
+          <a href="#">연구개발</a>
+          <ul class="mo-depth2">
+            <li><a href="./vision.html">미션 & 비전</a></li>
+            <li><a href="#">연구개발 활동</a></li>
+            <li><a href="#">파이프라인</a></li>
+            <li><a href="#">주요성과</a></li>
+          </ul>
+        </li>
+        <li class="mo-depth1">
+          <a href="#">지속가능경영</a>
+          <ul class="mo-depth2">
+            <li><a href="./environment.html">환경경영</a></li>
+            <li><a href="./social.html">사회공헌</a></li>
+            <li><a href="./governance.html">윤리경영</a></li>
+          </ul>
+        </li>
+        <li class="mo-depth1">
+          <a href="#">투자정보</a>
+          <ul class="mo-depth2">
+            <li><a href="#">공시·공고</a></li>
+            <li><a href="#">재무·주식정보</a></li>
+            <li><a href="#">IR 자료실</a></li>
+            <li><a href="#">ANNUAL REPORT</a></li>
+          </ul>
+        </li>
+        <li class="mo-depth1">
+          <a href="#">제품정보</a>
+          <ul class="mo-depth2">
+            <li><a href="./product.html">제품정보</a></li>
+            <li><a href="#">브랜드 이야기</a></li>
+            <li><a href="#">약국찾기</a></li>
+          </ul>
+        </li>
+        <li class="mo-depth1">
+          <a href="#">인재채용</a>
+        </li>
+      </ol>
+    </nav>
+  </div>
+</body>
+</html>

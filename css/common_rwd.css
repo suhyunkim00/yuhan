@@ -1,0 +1,242 @@
+@charset 'UTF-8';
+@import url('var.css');
+
+/* 1. mo ~767px까지 */
+@media all and (max-width: 767px) {
+  .yh-logo {
+  width: 125px;
+  height: 29px;
+  /* z-index: 101; */
+}
+  #yh-ft-pc {
+    display: none;
+  }
+}
+
+/* 2. tb 768px부터~ */
+@media all and (min-width: 768px) {
+  .yh-hd .wh-bg {
+    height: 100%;
+  }
+  #yh-ft-pc {
+    display: none;
+  }
+  .ft-logo-mo {
+    width: 300px;
+    height: 80px;
+    background: url('../images/y_logo_wh.svg') 0 0 / 260px no-repeat;
+  }
+  .ft-info-mo {
+    padding: 0 0 30px 0;
+  }
+  .ft-name {
+    line-height: 4;
+  }
+  .ft-box {
+    display: flex;
+    gap: 100px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .ft-box-left {
+    width: 300px;
+  }
+  .ft-gnb-mo ol {
+    width: 100%;
+    gap: 30px;
+    padding-top: 70px;
+    padding-right: 16px;
+  }
+  .ft-depth1-mo {
+    width: 33%;
+    max-width: 120px;
+  }
+  .ft-depth1-mo > a {
+    width: 120px;
+  }
+  .ft-info-dl-mo dd:after {
+    display: none;
+  }
+  .ft-site-list-mo {
+    top: auto;
+    bottom: 40px;
+  } 
+  /* 전체메뉴 보이는 사이트맵 */
+  .mo-depth1 {
+    position: relative;
+    padding: 24px 0 0 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+  .mo-depth1:last-child {
+    padding: 24px 0;
+  }
+  .mo-depth1:after { /* 애니메이션 라인 */
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 1px;
+    background-color: var(--main-color);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: 0.5s;
+  }
+  .mo-depth1:hover:after {
+    transform: scaleX(1);
+  }
+  .mo-depth1 > a {
+    font-size: 24px;
+    padding: 0;
+    line-height: 1.6;
+  }
+  .mo-depth1 > a:after {
+    content: '';
+    display: none;
+  }
+  .mo-depth2 {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 40px;
+    align-items: center;
+    padding: 12px 32px;
+    background-color: transparent;
+    box-shadow: inherit;
+  }
+  .mo-depth2 a {
+    opacity: 0.6;
+    transition: 0.5s;
+    font-size: 17px;
+  }
+  .mo-depth2 a:hover {
+    opacity: 1;
+    color: var(--main-color);
+  }
+  .yh-mo-gnb > .mo-depth1:last-child > a:hover {
+    color: var(--main-color);
+  }
+}
+
+/* 4. pc 1280px부터~ */
+@media all and (min-width: 1280px) {
+  .yh-hd {
+    padding: 0;
+  }
+  .yh-hd.fixed {
+    padding: 0;
+  }
+  .yh-hd .wh-bg {
+    height: 100px;
+  }
+  #yh-gnb {
+    display: block;
+  }
+  .yh-gnb {
+    display: flex;
+    justify-content: center;
+    width: 1040px;
+    letter-spacing: -1px;
+  }
+  .depth1 {
+    position: relative;
+  }
+  .depth1 > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 155px;
+    height: 100px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+  }
+  .depth1:hover > a {
+    color: var(--main-color);
+  }
+  .depth2-wrap {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    overflow: hidden;
+  }
+  .depth2 {}
+  .depth2 li {
+    margin: 10px;
+  }
+  .depth2 a {
+    font-size: 18px;
+    color: #000;
+  }
+  .depth2 a:hover {
+    color: var(--main-color);
+  }
+  .lang-list {
+    left: 20%;
+  }
+  #yh-ft-pc {
+    display: block;
+  }
+  #yh-ft-mo {
+    display: none;
+  }
+
+  /* 전체메뉴 사이트맵 */
+  .mo-gnb-sitemap {
+    width: 100%;
+  }
+  .mo-gnb-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* max-width: 1500px; */
+    height: 100px;
+    margin: auto;
+  }
+  .yh-mo-gnb:before {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 25.5%;
+    height: 100%;
+    background: url('../images/sitemap-mo-main.png') center bottom/ cover;
+    content: '';
+    opacity: 1;
+  }
+  .yh-mo-gnb {
+    padding:75px 0 75px 550px;
+  }
+  .mo-depth1 {
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+  }
+  .mo-depth1 > a {
+    width: 240px;
+    font-size: 28px;
+  }
+  .mo-depth2 {
+    width: calc(100% - 240px);
+    font-size: 1.1em;
+    line-height: 1.2;
+    text-align: center;
+  }
+  .mo-depth2 a {
+    font-size: 20px;
+  }
+  .mo-depth1 > a {
+    justify-content: start;
+  }
+  .mo-depth1 > a:after {
+    padding-left: 20px;
+    font-size: 32px;
+  }
+  .yh-mo-gnb > .mo-depth1:last-child {
+    border: inherit;
+  }
+  .yh-mo-gnb > .mo-depth1:last-child:after {
+    display: none;
+  }
+}

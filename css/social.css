@@ -1,0 +1,95 @@
+@charset 'utf-8';
+/* 웹폰트 연결 */
+@import url('webfonts.css');
+@import url('var.css');
+/* LNB */
+.yh-lnb-soc {
+  text-shadow: none;
+}
+.yh-lnb-list a:nth-child(2) {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--txt-color);
+}
+
+/* 메인 */
+.csrStr-container,
+.csrSys-container,
+.awards-container {
+  align-items: center;
+}
+.main-img-csrStr {
+  height: 100%;
+  max-width: 400px;
+}
+.main-txt-csrSys span {
+  color: var(--main-color);
+  font-weight: 600;
+}
+.main-img-csrStr,
+.main-img-csrSys,
+.main-img-awards {
+  width: 100%;
+}
+.main-card-awards {
+  background-color: var(--sub-gray-color);
+  border-radius: 8px;
+  border: 1px solid rgb(0, 0, 0, 0.3);
+}
+.main-img-awards {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 100%;
+}
+.main-card-txt-awards {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 16px;
+  border-top: 1px solid rgb(0, 0, 0, 0.3);
+}
+.safety-imgs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  width: 100%;
+}
+.safety-img {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 110px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: calc(50% - 6px);
+}
+.safety-img .main-txt {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 0 12px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.safety-img:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(1.5px);
+}
+.safety-img1 {background-image: url(../images/y_social/safeHealth_img10.png);}
+.safety-img2 {background-image: url(../images/y_social/safeHealth_img11.jpg);}
+.safety-img3 {background-image: url(../images/y_social/safeHealth_img12.jpg);}
+.safety-img4 {background-image: url(../images/y_social/safeHealth_img13.jpg);}
+.safety-img5 {background-image: url(../images/y_social/safeHealth_img14.jpg);}
+.safety-img6 {background-image: url(../images/y_social/safeHealth_img15.jpg);}
+.safety-img7 {background-image: url(../images/y_social/safeHealth_img16.jpg);}
+.safety-img8 {background-image: url(../images/y_social/safeHealth_img17.jpg);}

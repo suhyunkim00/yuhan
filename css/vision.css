@@ -1,0 +1,45 @@
+@charset 'utf-8';
+/* 웹폰트 연결 */
+@import url('webfonts.css');
+@import url('var.css');
+.yh-lnb-vision {
+  text-shadow: none;
+}
+.yh-lnb-list a:first-child {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: var(--txt-color);
+}
+/* 메인 */
+.txt-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+.main-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.mission-container,
+.strategy-container {
+  align-items: center;
+  width: 100%;
+}
+.mission-container img,
+.strategy-container img {
+  width: 100%;
+}
+.roadmap-container img {
+  width: 80%;
+  max-width: 400px;
+}
+.strategy-contents {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  word-break: break-all;
+}
+.strategy-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

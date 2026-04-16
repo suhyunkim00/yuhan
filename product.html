@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>제품소개</title>
+  <link rel="stylesheet" href="./css/aos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/common_rwd.css">
+  <link rel="stylesheet" href="./css/sub.css">
+  <link rel="stylesheet" href="./css/product.css">
+  <link rel="stylesheet" href="./css/product_rwd.css">
+  <link rel="icon" href="./images/favicon.svg" type="image/svg">
+  <script src="./js/jquery-1.12.4.min.js"></script>
+  <script src='./js/jquery-ui.min.js'></script>
+  <script src="./js/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/aos.js"></script>
+  <script src="./js/common.js"></script>
+  <script src="./js/sub.js"></script>
+</head>
+<body>
+  <!-- 헤더 -->
+  <header class="yh-hd">
+    <div class="wh-bg"><span class="blind">헤더흰색배경</span></div>
+    <div class="wh-bg-gnb"><span class="blind">메뉴흰색배경</span></div>
+    <div class="yh-container wrap">
+      <h1 class="yh-logo"><a href="index.html"><span class="blind">유한양행</span></a></h1>
+      <h2 class="blind">주 메뉴</h2>
+      <nav id="yh-gnb">
+        <ol class="yh-gnb">
+          <li class="depth1">
+            <a href="./info.html">유한소개</a>
+            <div class="depth2-wrap">
+              <ul class="depth2">
+                <li><a href="./info.html">회사소개</a></li>
+                <li><a href="#">홍보</a></li>
+                <li><a href="#">창업자 유일한</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="depth1">
+            <a href="./vision.html">연구개발</a>
+            <div class="depth2-wrap">
+              <ul class="depth2">
+                <li><a href="./vision.html">미션 & 비전</a></li>
+                <li><a href="#">연구개발 활동</a></li>
+                <li><a href="#">파이프라인</a></li>
+                <li><a href="#">주요성과</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="depth1">
+            <a href="./environment.html">지속가능경영</a>
+            <div class="depth2-wrap">
+              <ul class="depth2">
+                <li><a href="./environment.html">환경경영</a></li>
+                <li><a href="./social.html">사회공헌</a></li>
+                <li><a href="./governance.html">윤리경영</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="depth1">
+            <a href="#">투자정보</a>
+            <div class="depth2-wrap">
+              <ul class="depth2">
+                <li><a href="#">공시·공고</a></li>
+                <li><a href="#">재무·주식정보</a></li>
+                <li><a href="#">IR 자료실</a></li>
+                <li><a href="#">ANNUAL REPORT</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="depth1">
+            <a href="./product.html">제품정보</a>
+            <div class="depth2-wrap">
+              <ul class="depth2">
+                <li><a href="./product.html">제품정보</a></li>
+                <li><a href="#">브랜드 이야기</a></li>
+                <li><a href="#">약국찾기</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="depth1">
+            <a href="#">인재채용</a>
+          </li>
+        </ol>
+      </nav>
+      <nav class="util-menu">
+        <h2 class="blind">유틸 메뉴</h2>
+        <div class="lang-wrap">
+          <button class="lang-btn"><span class="blind">언어선택</span></button>
+          <ul class="lang-list">
+            <li><a href="#">KOR</a></li>
+            <li><a href="#">ENG</a></li>
+          </ul>
+          <button class="sitemap-btn"><span class="blind">사이트맵</span></button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 3. 서브헤더 & 비주얼 -->
+  <header class="sub-hd-product">
+    <div class="sub-hero-contents-product wh" data-aos="fade-up" data-aos-duration="1000">
+      <div class="sub-hero-title">YUHAN PRODUCT</div>
+      <div class="sub-hero-txt-en">GREAT YUHAN, GLOBAL YUHAN</div>
+      <div class="sub-hero-txt-ko">건강한 내일을 향한 변함없는 약속</div>
+    </div>
+    <nav id="yh-lnb">
+      <h3 class="blind">LNB 서브메뉴</h3>
+      <div class="yh-lnb-list wh">
+        <a href="./product.html" class="yh-lnb-btn yh-lnb-product">제품정보</a>
+        <a href="#" class="yh-lnb-btn yh-lnb-brand">브랜드 이야기</a>
+        <a href="#" class="yh-lnb-btn yh-lnb-pharmacy">약국찾기</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 메인 -->
+  <main id="yh-product">
+    <section class="main-sec main-sec-product wrap-sub">
+      <h2 class="blind">제품정보</h2>
+      <div class="main-container product-container">
+        <div class="main-title">제품정보</div>
+        <div class="product-tab">
+          <button data-target="etc" class="is-active">전문의약품</button>
+          <button data-target="otc">일반의약품</button>
+          <button data-target="quasi">의약외품</button>
+          <button data-target="health">건강기능식품</button>
+        </div>
+        <div class="product-category">
+          <div class="product-etc">
+            <div class="product-title">전문의약품</div>
+            <div class="swiper product-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <div class="product-img">
+                      <img src="./images/y_product/etc/product_pm1.svg" alt="듀오웰플러스정">
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">듀오웰플러스정 40/5/10mg</div>
+                      <p class="main-txt">본태고혈압, 심혈관 질환의 위험성 감소</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <div class="product-img">
+                      <img src="./images/y_product/etc/product_pm2.svg" alt="레리진액">
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">레리진액 500mL</div>
+                      <p class="main-txt">호흡기/알레르기 용약</p>
+                    </div>
+                  </div>
+              </div>
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <div class="product-img">
+                      <img src="./images/y_product/etc/product_pm3.svg" alt="마이카민 주사">
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">마이카민 주사 50mg</div>
+                      <p class="main-txt">마이카민주-진균감염 치료제</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <div class="product-img">
+                      <img src="./images/y_product/etc/product_pm4.svg" alt="메트포르민염산염정">
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">메트포르민염산염정 30정</div>
+                      <p class="main-txt">당뇨병용제, Metformin 경구제</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                 <div class="product-card">
+                    <div class="product-img">
+                      <img src="./images/y_product/etc/product_pm5.svg" alt="유한아세트아미노펜">
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">유한아세트아미노펜</div>
+                      <p class="main-txt">발열 및 통증의 단기간 치료</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <div class="product-img">
+                      <img src="./images/y_product/etc/product_pm6.svg" alt="아토바미브에이정">
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">아토바미브에이정</div>
+                      <p class="main-txt">고혈압, 원발성 고콜레스테롤혈증</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <div class="product-img">
+                      <img src="./images/y_product/etc/product_pm7.svg" alt="트루셋정">
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">트루셋정 20/2.5/6.25mg</div>
+                      <p class="main-txt">고혈압 치료의 완성</p>
+                    </div> 
+                  </div> 
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <div class="product-img">
+                      <img src="./images/y_product/etc/product_pm8.svg" alt="트윈로우정">
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">트윈로우정 20/2.5mg</div>
+                      <p class="main-txt">본태성 고혈압</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <div class="product-img">
+                      <img src="./images/y_product/etc/product_pm9.svg" alt="페니라민 주사">
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">페니라민 주사</div>
+                      <p class="main-txt">고초열, 두드러기, 소양성 피부질환</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-otc">
+            <div class="product-title">일반의약품</div>
+            <div class="swiper product-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="product-card">
+                      <div class="product-img">
+                        <img src="./images/y_product/otc/product_nm1.svg" alt="래피코 나잘스프레이액">
+                      </div>
+                      <div class="product-info">
+                        <div class="product-name">래피코 나잘스프레이액</div>
+                        <p class="main-txt">비강세척 및 비점막 건조증상</p>
+                      </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <div class="product-img">
+                      <img src="./images/y_product/otc/product_nm2.svg" alt="마그비스피드 더블액션액">
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">마그비스피드 더블액션액</div>
+                      <p class="main-txt">마그네슘을 두배로, 고함량 액상 영양</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <div class="product-img">
+                      <img src="./images/y_product/otc/product_nm3.svg" alt="마그비이엑스연질캡슐">
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">마그비이엑스연질캡슐</div>
+                      <p class="main-txt">4가지 마그네슘 조합과 작약감초 함유</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <div class="product-img">
+                      <img src="./images/y_product/otc/product_nm4.svg" alt="메가투르">
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">메가투르 633정</div>
+                      <p class="main-txt">활성 비타민B 6종, 신경 비타민B 123종</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                 <div class="product-card">
+                    <div class="product-img">
+                      <img src="./images/y_product/otc/product_nm5.svg" alt="비판텐">
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">비판텐</div>
+                      <p class="main-txt">상처, 화상, 찢긴 상처 등의 보조치료</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <div class="product-img">
+                      <img src="./images/y_product/otc/product_nm6.svg" alt="안티푸라민 빅파워 플라스타">
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">안티푸라민 빅파워 플라스타</div>
+                      <p class="main-txt">골관절염, 건주위염, 상과염</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <div class="product-img">
+                      <img src="./images/y_product/otc/product_nm7.svg" alt="유한메가비타액">
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">유한메가비타액</div>
+                      <p class="main-txt">3無(카페인, 과당, 설탕) 타우린 2000mg</p>
+                    </div> 
+                  </div> 
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <div class="product-img">
+                      <img src="./images/y_product/otc/product_nm8.svg" alt="유한미녹펜겔">
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">유한미녹펜겔</div>
+                      <p class="main-txt">펜겔타입으로 깔금하고 흘림없이</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <div class="product-img">
+                      <img src="./images/y_product/otc/product_nm9.svg" alt="코푸시럽에스">
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">코푸시럽에스</div>
+                      <p class="main-txt">기침, 가래엔 코푸시럽에스</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-quasi">
+            <div class="product-title">의약외품</div>
+            <div class="swiper product-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <div class="product-img">
+                      <img src="./images/y_product/quasi/product_qm1.svg" alt="해피홈 아웃도어 에어로솔">
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">해피홈 아웃도어 에어로솔</div>
+                      <p class="main-txt">기피제</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <div class="product-img">
+                      <img src="./images/y_product/quasi/product_qm2.svg" alt="해피홈 알콜스왑">
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">해피홈 알콜스왑</div>
+                      <p class="main-txt">피부, 창상 부위의 소독 및 의료 용구의 소독</p>
+                    </div>
+                  </div>
+              </div>
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <div class="product-img">
+                      <img src="./images/y_product/quasi/product_qm3.svg" alt="유한덴탈케어 메디가글">
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">유한덴탈케어 메디가글</div>
+                      <p class="main-txt">입냄새 유발물질 감소</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <div class="product-img">
+                      <img src="./images/y_product/quasi/product_qm4.svg" alt="해피홈 탄력아쿠아밴드">
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">해피홈 탄력아쿠아밴드</div>
+                      <p class="main-txt">상처부위, 환부 등의 보호</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                 <div class="product-card">
+                    <div class="product-img">
+                      <img src="./images/y_product/quasi/product_qm5.svg" alt="해피홈 모기기피제 패밀리액">
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">해피홈 모기기피제 패밀리액</div>
+                      <p class="main-txt">모기, 진드기(작은소참진드기, 탈진드기) 기피</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <div class="product-img">
+                      <img src="./images/y_product/quasi/product_qm6.svg" alt="해피홈 모기향">
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">해피홈 모기향</div>
+                      <p class="main-txt">모기 구제</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <div class="product-img">
+                      <img src="./images/y_product/quasi/product_qm7.svg" alt="해피홈 SAFE365 순 손소독제 갤">
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">해피홈 SAFE365 순 손소독제 갤</div>
+                      <p class="main-txt">손 소독</p>
+                    </div> 
+                  </div> 
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <div class="product-img">
+                      <img src="./images/y_product/quasi/product_qm8.svg" alt="해피홈 에어파스 쿨 에어로솔">
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">해피홈 에어파스 쿨 에어로솔</div>
+                      <p class="main-txt">시원하고 편리하게</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <div class="product-img">
+                      <img src="./images/y_product/quasi/product_qm9.svg" alt="해피홈 폼드레싱 소프트">
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">해피홈 폼드레싱 소프트</div>
+                      <p class="main-txt">2차 치유 폼제 창상피복재</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-health">
+            <div class="product-title">건강기능식품</div>
+            <div class="swiper product-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <div class="product-img">
+                      <img src="./images/y_product/health/product_hm1.svg" alt="센스밸런스 다운핏">
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">센스밸런스 다운핏</div>
+                      <p class="main-txt">내몸을 가볍게하는 핑크워터, 센스밸런스 다운핏</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <div class="product-img">
+                      <img src="./images/y_product/health/product_hm2.svg" alt="유한 덴티케어플러스+">
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">유한 덴티케어플러스+</div>
+                      <p class="main-txt">그린프로폴리스로 치아, 잇몸 관리하는 덴티케어플러스</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <div class="product-img">
+                      <img src="./images/y_product/health/product_hm3.svg" alt="센스밸런스">
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">센스밸런스</div>
+                      <p class="main-txt">여성 맞춤형 멀티비타민/미네랄 브랜드</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <div class="product-img">
+                      <img src="./images/y_product/health/product_hm4.svg" alt="와이즈바이옴프로 위&장 듀얼케어">
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">와이즈바이옴프로 위&장 듀얼케어</div>
+                      <p class="main-txt">장건강과 위건강을 동시에 관리할 수 있는 이중기능성</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                 <div class="product-card">
+                    <div class="product-img">
+                      <img src="./images/y_product/health/product_hm5.svg" alt="유한 루테인지아잔틴플러스">
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">유한 루테인지아잔틴플러스</div>
+                      <p class="main-txt">루테인지아잔틴복합추출물과 비타민A외 눈 건강</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <div class="product-img">
+                      <img src="./images/y_product/health/product_hm6.svg" alt="백수오골드">
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">백수오골드</div>
+                      <p class="main-txt">여성 갱년기 관리의 현명한 선택</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <div class="product-img">
+                      <img src="./images/y_product/health/product_hm7.svg" alt="유한 혈당케어 여주리버플러스">
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">유한 혈당케어 여주리버플러스</div>
+                      <p class="main-txt">식후혈당과 간건강을 듀얼로 케어</p>
+                    </div> 
+                  </div> 
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <div class="product-img">
+                      <img src="./images/y_product/health/product_hm8.svg" alt="포켓부스터">
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">포켓부스터</div>
+                      <p class="main-txt">활력을 위한 운동수행능력과 장건강을 동시에 케어</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product-card">
+                    <div class="product-img">
+                      <img src="./images/y_product/health/product_hm9.svg" alt="센스밸런스 헤모 츄">
+                    </div>
+                    <div class="product-info">
+                      <div class="product-name">센스밸런스 헤모 츄</div>
+                      <p class="main-txt">맛있는 츄어볼 철분 영양제</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- pc 푸터 -->
+  <footer id="yh-ft-pc" class="wh">
+    <div class="ft-container wrap">
+      <div class="ft-wrap">
+        <h2 class="blind">푸터</h2>
+        <div class="ft-company-wrap">
+          <div class="ft-logo"><span class="blind">로고</span></div>
+          <div class="ft-link">
+            <a href="#"><span>유한양행 버들장터</span></a>
+            <a href="#"><span>고객센터</span></a>
+            <a href="#"><span>인재채용</span></a>
+            <a href="#"><span>판매약국 찾기</span></a>
+          </div>
+          <nav class="ft-site-wrap">
+            <h2 class="blind">계열사</h2>
+            <button class="ft-site-btn">Family Site</button>
+            <ul class="ft-site-list">
+              <li>(주)유한화학</li>
+              <li>(주)유한메디카</li>
+              <li>(주)유한크로락스</li>
+              <li>(주)유칼릭스</li>
+              <li>(주)와이즈메디</li>
+              <li>(주)유한킴벌리</li>
+              <li>(주)한국얀센</li>
+              <li>(주)유한건강생활</li>
+              <li>(주)이뮨온시아</li>
+              <li>애드파마</li>
+              <li>워랜텍</li>
+            </ul>
+          </nav>
+          <div class="ft-info">
+            <dl class="ft-info-dl">
+              <dt class="blind">회사명</dt>
+              <dd class="blind">(주)유한양행</dd>
+              <dt>회사명</dt>
+              <dd>유한양행</dd>
+              <dt>사업자등록번호</dt>
+              <dd>118-81-00601</dd><br>
+              <dt>대표</dt>
+              <dd>조옥제</dd>
+              <dt>전화</dt>
+              <dd>02-828-0181</dd>
+              <dt>팩스</dt>
+              <dd>02-828-0050</dd><br>
+              <dt class="blind">주소</dt>
+              <dd>서울특별시 동작구 노량진로 74</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="ft-gnb">
+          <ol>
+            <li class="ft-depth1">
+              <a href="#">유한소개</a>
+              <ul class="ft-depth2">
+                <li><a href="./info.html">회사소개</a></li>
+                <li><a href="#">홍보</a></li>
+                <li><a href="#">창업자 유일한</a></li>
+              </ul>
+            </li>
+            <li class="ft-depth1">
+              <a href="#">연구개발</a>
+              <ul class="ft-depth2">
+                <li><a href="./vision.html">미션&비전</a></li>
+                <li><a href="#">연구개발 활동</a></li>
+                <li><a href="#">파이프라인</a></li>
+                <li><a href="#">주요성과</a></li>
+              </ul>
+            </li>
+            <li class="ft-depth1">
+              <a href="#">지속가능경영</a>
+              <ul class="ft-depth2">
+                <li><a href="./environment.html">환경경영</a></li>
+                <li><a href="./social.html">사회공헌</a></li>
+                <li><a href="./governance.html">윤리경영</a></li>
+              </ul>
+            </li>
+            <li class="ft-depth1">
+              <a href="#">투자정보</a>
+              <ul class="ft-depth2">
+                <li><a href="#">공시·공고</a></li>
+                <li><a href="#">재무·주식정보</a></li>
+                <li><a href="#">IR 자료실</a></li>
+                <li><a href="#">ANNUAL REPORT</a></li>
+              </ul>
+            </li>
+            <li class="ft-depth1">
+              <a href="#">제품정보</a>
+              <ul class="ft-depth2">
+                <li><a href="./product.html">제품정보</a></li>
+                <li><a href="#">브랜드 이야기</a></li>
+                <li><a href="#">약국찾기</a></li>
+              </ul>
+            </li>
+            <li class="ft-depth1">
+              <a href="#">인재채용</a>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="ft-end">
+        <div class="ft-copy">COPYRIGHT &copy; 2026 YUHAN. ALL RIGHT RESERVED</div>
+        <ul class="ft-sns">
+          <li class="ft-sns-kakaotalk"><a href="#"><i class="fa-brands fa-kakao-talk"><span class="blind">카카오톡</span></i></a></li>
+          <li class="ft-sns-facebook"><a href="#"><i class="fa-brands fa-facebook-f"><span class="blind">페이스북</span></i></a></li>
+          <li class="ft-sns-instagram"><a href="#"><i class="fa-brands fa-instagram"><span class="blind">인스타그램</span></i></a></li>
+          <li class="ft-sns-youtube"><a href="#"><i class="fa-brands fa-youtube"><span class="blind">유튜브</span></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- mo 푸터 -->
+  <footer id="yh-ft-mo" class="wh">
+    <div class="ft-container-mo">
+      <div class="ft-wrap-mo">
+        <h2 class="blind">푸터</h2>
+        <div class="ft-company-wrap-mo">
+          <div class="ft-box">
+            <div class="ft-box-left">
+              <div class="ft-logo-mo"><span class="blind">로고</span></div>
+              <div class="ft-info-mo">
+                <dl class="ft-info-dl-mo">
+                  <dt class="blind">회사명</dt>
+                  <dd class="ft-name">(주)유한양행</dd><br>
+                  <dt>회사명</dt>
+                  <dd>유한양행</dd>
+                  <dt>사업자등록번호</dt>
+                  <dd>118-81-00601</dd><br>
+                  <dt>대표</dt>
+                  <dd>조옥제</dd>
+                  <dt>전화</dt>
+                  <dd>02-828-0181</dd><br>
+                  <dt>팩스</dt>
+                  <dd>02-828-0050</dd>
+                  <dt class="blind">주소</dt>
+                  <dd>서울특별시 동작구 노량진로 74</dd>
+                </dl>
+              </div>
+              <nav class="ft-site-wrap-mo">
+                <h2 class="blind">계열사</h2>
+                <button class="ft-site-btn-mo">Family Site</button>
+                <ul class="ft-site-list-mo">
+                  <li>(주)유한화학</li>
+                  <li>(주)유한메디카</li>
+                  <li>(주)유한크로락스</li>
+                  <li>(주)유칼릭스</li>
+                  <li>(주)와이즈메디</li>
+                  <li>(주)유한킴벌리</li>
+                  <li>(주)한국얀센</li>
+                  <li>(주)유한건강생활</li>
+                  <li>(주)이뮨온시아</li>
+                  <li>애드파마</li>
+                  <li>워랜텍</li>
+                </ul>
+              </nav>
+            </div>
+            <div class="ft-box-right">
+              <div class="gnb-wrap">
+                <div class="ft-gnb-mo">
+                  <ol>
+                    <li class="ft-depth1-mo">
+                      <a href="#">유한소개</a>
+                      <ul class="ft-depth2-mo">
+                        <li><a href="./info.html">회사소개</a></li>
+                        <li><a href="#">홍보</a></li>
+                        <li><a href="#">창업자 유일한</a></li>
+                      </ul>
+                    </li>
+                    <li class="ft-depth1-mo">
+                      <a href="#">연구개발</a>
+                      <ul class="ft-depth2-mo">
+                        <li><a href="./vision.html">미션&비전</a></li>
+                        <li><a href="#">연구개발 활동</a></li>
+                        <li><a href="#">파이프라인</a></li>
+                        <li><a href="#">주요성과</a></li>
+                      </ul>
+                    </li>
+                    <li class="ft-depth1-mo">
+                      <a href="#">지속가능경영</a>
+                      <ul class="ft-depth2-mo">
+                        <li><a href="./environment.html">환경경영</a></li>
+                        <li><a href="./social.html">사회공헌</a></li>
+                        <li><a href="./governance.html">윤리경영</a></li>
+                      </ul>
+                    </li>
+                    <li class="ft-depth1-mo">
+                      <a href="#">투자정보</a>
+                      <ul class="ft-depth2-mo">
+                        <li><a href="#">공시·공고</a></li>
+                        <li><a href="#">재무·주식정보</a></li>
+                        <li><a href="#">IR 자료실</a></li>
+                        <li><a href="#">ANNUAL REPORT</a></li>
+                      </ul>
+                    </li>
+                    <li class="ft-depth1-mo">
+                      <a href="#">제품정보</a>
+                      <ul class="ft-depth2-mo">
+                        <li><a href="./product.html">제품정보</a></li>
+                        <li><a href="#">브랜드 이야기</a></li>
+                        <li><a href="#">약국찾기</a></li>
+                      </ul>
+                    </li>
+                    <li class="ft-depth1-mo">
+                      <a href="#">인재채용</a>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="ft-sns-mo">
+            <li class="ft-sns-kakaotalk"><a href="#"><i class="fa-brands fa-kakao-talk"><span class="blind">카카오톡</span></i></a></li>
+            <li class="ft-sns-facebook"><a href="#"><i class="fa-brands fa-facebook-f"><span class="blind">페이스북</span></i></a></li>
+            <li class="ft-sns-instagram"><a href="#"><i class="fa-brands fa-instagram"><span class="blind">인스타그램</span></i></a></li>
+            <li class="ft-sns-youtube"><a href="#"><i class="fa-brands fa-youtube"><span class="blind">유튜브</span></i></a></li>
+            <li class="ft-sns-cs"><a href="#"><i class="fa-solid fa-phone"><span class="blind">고객센터</span></i></a></li>
+          </ul>
+          <div class="ft-copy-mo">&copy; 2026 YUHAN. ALL RIGHT RESERVED</div>
+        </div>
+      </div>
+  </footer>
+
+  <!-- 사이트맵 -->
+  <div class="mo-gnb-sitemap bk">
+    <div class="mo-gnb-top">
+      <a href="index.html" class="mo-gnb-logo"><span class="blind">처음으로</span></a>
+      <button class="btn-close"><span class="blind">닫기</span></button>
+    </div>
+    <nav id="yh-mo-gnb">
+      <ol class="yh-mo-gnb">
+        <li class="mo-depth1">
+          <a href="#">유한소개</a>
+          <ul class="mo-depth2">
+            <li><a href="./info.html">회사소개</a></li>
+            <li><a href="#">홍보</a></li>
+            <li><a href="#">창업자 유일한</a></li>
+          </ul>
+        </li>
+        <li class="mo-depth1">
+          <a href="#">연구개발</a>
+          <ul class="mo-depth2">
+            <li><a href="./vision.html">미션 & 비전</a></li>
+            <li><a href="#">연구개발 활동</a></li>
+            <li><a href="#">파이프라인</a></li>
+            <li><a href="#">주요성과</a></li>
+          </ul>
+        </li>
+        <li class="mo-depth1">
+          <a href="#">지속가능경영</a>
+          <ul class="mo-depth2">
+            <li><a href="./environment.html">환경경영</a></li>
+            <li><a href="./social.html">사회공헌</a></li>
+            <li><a href="./governance.html">윤리경영</a></li>
+          </ul>
+        </li>
+        <li class="mo-depth1">
+          <a href="#">투자정보</a>
+          <ul class="mo-depth2">
+            <li><a href="#">공시·공고</a></li>
+            <li><a href="#">재무·주식정보</a></li>
+            <li><a href="#">IR 자료실</a></li>
+            <li><a href="#">ANNUAL REPORT</a></li>
+          </ul>
+        </li>
+        <li class="mo-depth1">
+          <a href="#">제품정보</a>
+          <ul class="mo-depth2">
+            <li><a href="./product.html">제품정보</a></li>
+            <li><a href="#">브랜드 이야기</a></li>
+            <li><a href="#">약국찾기</a></li>
+          </ul>
+        </li>
+        <li class="mo-depth1">
+          <a href="#">인재채용</a>
+        </li>
+      </ol>
+    </nav>
+  </div>
+</body>
+</html>
