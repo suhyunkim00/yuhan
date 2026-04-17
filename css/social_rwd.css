@@ -41,11 +41,6 @@
   }
   .safety-img {
     width: calc(25% - 15px);
-    /* height: 220px; */
-  }
-  .safety-img:hover::before {
-    background-color: rgba(0, 0, 0, 0);
-    backdrop-filter: none;
   }
   .safety-img:hover .main-txt {
     opacity: 0;

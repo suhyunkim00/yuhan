@@ -13,9 +13,9 @@
 
 /* 2. tb 768px부터~ */
 @media all and (min-width: 768px) {
-  .main-sec{
+  /* .main-sec{
     padding: 60px 0;
-  }
+  } */
   
  .main-sec-hero {
     /* height: 170vh;   */
@@ -63,7 +63,7 @@
     color: #000; 
     height: auto; 
     align-self: stretch;
-    padding: 40px 20px 40px 0;
+    padding: 50px 20px 50px 0;
   }
   .main-story-txt-pc > span > br {
     display: none;
@@ -167,19 +167,20 @@
     display: none;
   }
  .official-prod {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center; 
- }
- .main-sec-official {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+  }
+  .main-sec-official {
     background: url('../images/y_youtube/line-tb2.jpg') center center / cover no-repeat;
- }
- .prod-txt > span:nth-child(1) {
-  font-size: 30px;
- }
- .prod-txt > span:nth-child(2) {
-  font-size: 18px;
- }
+    padding-bottom: 80px;  
+  }
+  .prod-txt > span:nth-child(1) {
+    font-size: 30px;
+  }
+  .prod-txt > span:nth-child(2) {
+    font-size: 18px;
+  }
   .prod-img {
     display: block;
   }
@@ -191,6 +192,7 @@
   }
   /* esg */
   .main-sec-esg {
+    padding: 30px 0;
   }
   .main-esg-txt-wrap h3 {
     font-size: 60px;
@@ -237,6 +239,9 @@
   .swiper-button-next {
     display: block;
   }
+  .main-sec-brandsite {
+    padding: 50px 0;
+  }
   .main-brandsite-txt-wrap h3 {
     font-size: 60px;
   }
@@ -273,6 +278,7 @@
     padding: 0;
   }
   .main-story-txt-wrap {
+    padding: 96px 0;
     gap: 20px;
   }
   .main-story-name {
@@ -459,7 +465,7 @@
   }
   /* esg */
   .main-sec-esg {
-    padding: 96px 0;
+    padding: 60px 0;
   }
   .main-sec-esg .wrap {
     max-width: 100%;
@@ -531,11 +537,6 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 1;
-  }
-  .e-content:hover:before, .s-content:hover:before, .g-content:hover:before {
-    background-color: transparent;
-    transition: 0.3s;
-    filter: inherit;
   }
   .esg-card span {
     position: relative;

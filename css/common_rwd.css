@@ -69,6 +69,7 @@
   }
   .mo-depth1:last-child {
     padding: 24px 0;
+    margin-bottom: 15px;
   }
   .mo-depth1:after { /* 애니메이션 라인 */
     content: '';

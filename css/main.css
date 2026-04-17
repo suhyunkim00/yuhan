@@ -99,7 +99,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 35px 0;
+  padding: 50px 0;
 }
 
 .main-story-name {
@@ -144,7 +144,7 @@
 .main-sec-company {
   background-color: var(--main-color);
   color: #fff;
-  padding: 30px 0;
+  padding: 50px 0;
 }
 
 .main-company-container {}
@@ -367,7 +367,7 @@
 .main-sec-esg {
   width: 100%;
   background-color: #fff;
-  padding: 30px 0 60px 0;
+  padding: 30px 0 0;
 }
 
 .main-esg-container {
@@ -449,6 +449,11 @@
   height: auto;
   padding: 100px 0;
 }
+.e-content:hover:before, .s-content:hover:before, .g-content:hover:before {
+    background-color: transparent;
+    transition: 0.3s;
+    filter: inherit;
+  }
 
 .esg-card span {
   position: relative;
